@@ -1,0 +1,85 @@
+/*=== Import Fonts ===*/
+@include font-face($font-primary-light, $font-primary-light-path);
+@include font-face($font-primary-regular, $font-primary-regular-path);
+@include font-face($font-primary-medium, $font-primary-medium-path);
+@include font-face($font-primary-semibold, $font-primary-semibold-path);
+@include font-face($font-primary-bold, $font-primary-bold-path);
+
+/*=== Typography Styling ===*/
+body {
+	// color: $dark-1;
+	// font-size: $size-small;
+	// font-family: $font-primary-regular, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-stretch: normal;
+	letter-spacing: normal;
+	// line-height: 1.5;
+}
+
+h1 {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+h2 {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+h3 {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+h4 {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+h5 {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+h6 {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+
+button {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+
+a {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+
+p {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+
+label {
+	// @include font-source-sans($font-primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
+}
+
+// How typogrraphy should looks like on mobile version
+@include for-size(phone-only) {
+	h1 {
+		// font-size: ;
+		// line-height: ;
+	}
+	h2 {
+		// font-size: ;
+		// line-height: ;
+	}
+	h3 {
+		// font-size: ;
+		// line-height: ;
+	}
+	h4 {
+		// font-size: ;
+		// line-height: ;
+	}
+	h5 {
+		// font-size: ;
+		// line-height: ;
+	}
+	h6 {
+		// font-size: ;
+		// line-height: ;
+	}
+	p {
+		// font-size: ;
+		// line-height: ;
+	}
+}
