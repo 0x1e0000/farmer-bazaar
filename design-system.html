@@ -26,19 +26,6 @@
 
 <body class="container py-5">
 	<h1 class="text-center mb-5">Design System</h1>
-	<div class="row mb-5">
-		<header class="col-12">
-			<h2 class="mb-3">Pages</h2>
-		</header>
-		<div class="col-12">
-			<div class="pt-4 px-4 pb-2 border">
-				<a href="./index.html" class="button">Home</a>
-				<a href="./contact.html" class="button">Contact</a>
-				<a href="./about.html" class="button">About</a>
-				<a href="./faq.html" class="button">FAQ</a>
-			</div>
-		</div>
-	</div>
 
 	<div class="row mb-5">
 		<div class="col-md-4">
@@ -64,18 +51,12 @@
 				<h2>Paragraphes</h2>
 			</header>
 			<div class="p-4 border">
-				<p>(Regular) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolore inventore provident
+				<p>(p1) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolore inventore provident
 					corrupti veritatis dolorum!</p>
-				<p class="">(...) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolore inventore
+				<p class="medium">(p2) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolore inventore
 					provident corrupti veritatis dolorum!</p>
-				<p class="">(...) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+				<p class="small">(p3) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
 					dolore inventore provident corrupti veritatis dolorum!</p>
-				<p class="">(...) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolore
-					inventore provident corrupti veritatis dolorum!</p>
-				<p class="">(...) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolore inventore
-					provident corrupti veritatis dolorum!</p>
-				<p class="">(...) Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, dolore inventore
-					provident corrupti veritatis dolorum!</p>
 			</div>
 		</div>
 	</div>
@@ -89,13 +70,13 @@
 			<div class="border p-4">
 				<h4>with button tag</h4>
 				<br><br>
-				<button class="button">button</button>
+				<button class="btn btn-primary">Log in</button>
 				<br><br>
-				<button class="button">button</button>
+				<button class="btn btn-outline-primary">Learn more</button>
 				<br><br>
-				<button class="button">button</button>
+				<button class="btn btn-outline-primary" disabled>Learn more</button>
 				<br><br>
-				<button class="button">button</button>
+				<button class="btn btn-primary" disabled>Log in</button>
 			</div>
 		</div>
 		<div class="col-md-6">
@@ -103,45 +84,29 @@
 				<h4>with anchor tag</h4>
 				<br><br>
 				<br><br>
-				<a href="#" class="button">button</a>
+				<a href="#" class="btn btn-primary">Log in</a>
 				<br><br>
-				<a href="#" class="button">button</a>
+				<a href="#" class="btn btn-outline-primary">Learn more</a>
 				<br><br>
-				<a href="#" class="button">button</a>
-				<br><br>
-				<a href="#" class="button">button</a>
-				<br><br>
-				<a href="#" class="link">link</a>
-				<br><br>
-				<a href="#">simple link</a>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="row mb-5">
-		<header class="col-12">
-			<h2 class="mb-3">Dropdowns</h2>
-		</header>
-		<div class="col-md-6">
-			<div class="border p-4">
-				<div class="dropdown">
-					<button class="button dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">
-						dropdown
-						<!-- Arrow -->
-						<svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-							<path
-								d="M5.36396 8.94975L8.6066 5.70711C9.23657 5.07714 8.7904 4 7.8995 4H1.41421C0.523306 4 0.077142 5.07714 0.707107 5.70711L3.94975 8.94975C4.34027 9.34027 4.97344 9.34027 5.36396 8.94975Z"
-								fill="#514A7B" />
-						</svg>
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Action</a>
-						<a class="dropdown-item" href="#">Another action</a>
-						<a class="dropdown-item" href="#">Something else here</a>
-					</div>
-				</div>
+				<a href="#" class="nav-link">nav link</a>
+				<a href="#" class="link">
+					Know more
+					<svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 8L25 8" stroke="#4AAE34" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path d="M18 1L25 8L18 15" stroke="#4AAE34" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</a>
+				<a href="test" class="link">
+					Know more
+					<svg width="26" height="16" viewBox="0 0 26 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M1 8L25 8" stroke="#4AAE34" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" />
+						<path d="M18 1L25 8L18 15" stroke="#4AAE34" stroke-width="2" stroke-linecap="round"
+							stroke-linejoin="round" />
+					</svg>
+				</a>
 			</div>
 		</div>
 	</div>
