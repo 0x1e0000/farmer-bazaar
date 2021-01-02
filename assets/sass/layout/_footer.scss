@@ -1,0 +1,68 @@
+.footer {
+	padding-top: 72px;
+	padding-bottom: 72px;
+	a {
+		@extend p;
+		margin-bottom: 18px;
+		display: block;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+	.row {
+		& > div:nth-child(1) {
+			p {
+				margin-top: 24px;
+				margin-bottom: 48px;
+			}
+		}
+		& > div:nth-child(5) {
+			h4 {
+				margin-bottom: 24px;
+			}
+			a {
+				&:hover {
+					color: #1d7d1a;
+					text-decoration: none;
+					svg {
+						path {
+							fill: #1d7d1a;
+						}
+					}
+				}
+			}
+			svg {
+				margin-right: 8px;
+				width: 24px;
+			}
+		}
+		span.button {
+			color: $color-text;
+			margin-bottom: 12px;
+			margin-left: 12px;
+			margin-top: 24px;
+			display: inline-block;
+		}
+	}
+
+	.pre-footer {
+		display: flex;
+		justify-content: center;
+		margin-top: 36px;
+		form {
+			margin-top: 18px;
+			background-color: $color-white;
+			border: 1px solid $color-white;
+			width: 486px;
+			border-radius: 8px;
+			display: flex;
+			justify-content: space-between;
+			input[type="email"] {
+				padding: 16px;
+				padding-right: 0;
+				background: none;
+				flex: 2;
+			}
+		}
+	}
+}
