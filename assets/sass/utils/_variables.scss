@@ -8,21 +8,9 @@ $color-gray2: #868888;
 $color-secondary-green: #a2c83a;
 $color-secondary-peach: #f9cca4;
 
-//Shadow
-$shadow-1: 0px 51px 46px rgba(58, 53, 53, 0.13), 0px 21.3066px 23.9519px rgba(58, 53, 53, 0.100938),
-	0px 11.3915px 11.7546px rgba(58, 53, 53, 0.0951369), 0px 6.38599px 6.12733px rgba(58, 53, 53, 0.0888927),
-	0px 3.39155px 3.12867px rgba(58, 53, 53, 0.076069);
-
-//Font sizes
-// $font-size-xs: ;
-// $font-size-sm: ;
-// $font-size-re: ;
-// $font-size-md: ;
-// $font-size-lg: ;
-// $font-size-xl: ;
-
 // Font Names
 $font-primary: "OpenSans";
+$font-secondary: "Interstate";
 
 //==================================//
 // Don't miss with those variabeles //
@@ -41,13 +29,19 @@ $color-white: #ffffff;
 //Font Path
 $font-primary-light-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Light.ttf";
 $font-primary-regular-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Regular.ttf";
-$font-primary-medium-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Medium.ttf";
 $font-primary-semibold-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Semibold.ttf";
 $font-primary-bold-path: "../fonts/" + $font-primary + "/" + $font-primary + "-Bold.ttf";
+
+$font-secondary-light-path: "../fonts/" + $font-secondary + "/" + $font-secondary + "-Light.ttf";
+$font-secondary-regular-path: "../fonts/" + $font-secondary + "/" + $font-secondary + "-Regular.ttf";
+$font-secondary-bold-path: "../fonts/" + $font-secondary + "/" + $font-secondary + "-Bold.ttf";
 
 //Font Family
 $font-primary-light: $font-primary + " Light";
 $font-primary-regular: $font-primary + " Regular";
-$font-primary-medium: $font-primary + " Medium";
 $font-primary-semibold: $font-primary + " SemiBold";
 $font-primary-bold: $font-primary + " Bold";
+
+$font-secondary-light: $font-secondary + " Light";
+$font-secondary-regular: $font-secondary + " Regular";
+$font-secondary-bold: $font-secondary + " Bold";
