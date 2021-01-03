@@ -1,2 +1,22 @@
 .navbar{
+	display: flex;
+	&__content{
+		flex: 1;
+		&__top{
+			display: flex;
+			&__links{
+				display: flex;
+				& > div{
+					display: flex;
+					align-items: flex-start;
+				}
+				.button{
+					color: $color-text;
+				}
+			}
+		}
+		&__bottom{
+			display: flex;
+		}
+	}
 }
