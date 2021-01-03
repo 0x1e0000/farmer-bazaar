@@ -1,6 +1,7 @@
 .footer {
 	padding-top: 72px;
 	padding-bottom: 72px;
+	position: relative;
 	a {
 		@extend p;
 		margin-bottom: 18px;
@@ -9,7 +10,15 @@
 			text-decoration: underline;
 		}
 	}
+	.tomato-bg{
+		position: absolute;
+		left: 13%;
+		bottom: 177px;
+	}
 	.row {
+		& > div{
+			margin-bottom: 36px;
+		}
 		& > div:nth-child(1) {
 			p {
 				margin-top: 24px;
@@ -39,8 +48,6 @@
 		span.button {
 			color: $color-text;
 			margin-bottom: 12px;
-			margin-left: 12px;
-			margin-top: 24px;
 			display: inline-block;
 		}
 	}
@@ -48,7 +55,6 @@
 	.pre-footer {
 		display: flex;
 		justify-content: center;
-		margin-top: 36px;
 		form {
 			margin-top: 18px;
 			background-color: $color-white;
@@ -63,6 +69,20 @@
 				background: none;
 				flex: 2;
 			}
+		}
+	}
+	@include for-size(tablet-landscape-down){
+		.tomato-bg{
+			bottom: auto;
+			top: 180px;
+		}
+	}
+	@include for-size(tablet-portrait-down){
+		.tomato-bg{
+			top: auto;
+			bottom: 250px;
+			right: 111px;
+			left: auto;
 		}
 	}
 }
