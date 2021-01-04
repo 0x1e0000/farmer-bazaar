@@ -13,6 +13,11 @@
 				.button{
 					color: $color-text;
 				}
+
+			}
+			&__buttons{
+				display: flex;
+				align-items: center;
 			}
 		}
 		&__bottom{

@@ -3061,6 +3061,8 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .navbar__content__top__links .button { color: #49535e; }
 
+.navbar__content__top__buttons { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
 .navbar__content__bottom { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .footer { padding-top: 72px; padding-bottom: 72px; position: relative; }
