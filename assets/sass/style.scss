@@ -17,7 +17,8 @@
 // 5 - Layout;
 @import "layout/header";
 @import "layout/navbar";
+@import "layout/hero";
 @import "layout/footer";
 
 // 6 - Pages;
-// @import 'pages/';
+@import 'pages/home';

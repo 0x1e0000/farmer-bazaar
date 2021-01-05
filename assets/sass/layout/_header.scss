@@ -1,5 +1,7 @@
 .main-header {
 	display: flex;
+	justify-content: center;
+	padding-top: 24px;
 	.info-panel {
 		@include flex(center, flex-start);
 		margin-top: 36px;

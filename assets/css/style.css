@@ -2859,12 +2859,16 @@ a.text-dark:focus, a.text-dark:hover { color: #1d2124 !important; }
   .table .thead-dark th { color: inherit; border-color: #dee2e6; } }
 .bg-green { background-color: #D0EA88; }
 
+section header { text-align: center; margin-bottom: 60px; }
+
+section header h2 { margin-bottom: 18px; }
+
 * { margin: 0px; padding: 0px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 0; vertical-align: baseline; }
 
 /** 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using `em` units. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
 html { font-size: 100%; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
 
-body { overflow-x: hidden; }
+body { background-color: #fcfcfc; overflow-x: hidden; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -3039,7 +3043,7 @@ input:-ms-input-placeholder { color: #afafaf; }
 
 input::-webkit-input-placeholder { color: #afafaf; }
 
-.main-header { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.main-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-top: 24px; }
 
 .main-header .info-panel { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; margin-top: 36px; }
 
@@ -3049,21 +3053,63 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .main-header .info-panel .button { color: #49535e; margin-left: 8px; margin-right: 12px; }
 
-.navbar { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.navbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-bottom: 84px; }
 
 .navbar__content { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
-.navbar__content__top { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.navbar__content__top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; margin-bottom: 32px; }
 
 .navbar__content__top__links { display: -webkit-box; display: -ms-flexbox; display: flex; }
 
 .navbar__content__top__links > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 
-.navbar__content__top__links .button { color: #49535e; }
+.navbar__content__top__links .button { color: #49535e; margin-bottom: 8px; }
+
+.navbar__content__top__links > div { margin-right: 24px; }
+
+.navbar__content__top__links > div img { margin-right: 14px; }
 
 .navbar__content__top__buttons { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.navbar__content__bottom { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.navbar__content__top__buttons a:first-child { margin-right: 24px; }
+
+.navbar__content__bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.navbar__content__bottom__search .input-group { border: 1px solid #d7d7d7; border-radius: 8px; padding-left: 15px; }
+
+.navbar__content__bottom__search .input-group .pin-field { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.navbar__content__bottom__search .input-group .pin-field svg { margin-right: 8px; }
+
+.navbar__content__bottom__search .input-group .countries { border-left: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 14px; }
+
+.navbar__content__bottom__search .input-group .search-field { padding-left: 14px; }
+
+.navbar__content__bottom__menu .nav-link { font-family: "OpenSans Regular"; }
+
+.navbar__content__bottom__icons { margin-right: 45px; }
+
+.navbar__content__bottom__icons a:first-child { margin-right: 38px; }
+
+.navbar__content__bottom__lang .dropdown { background: none; }
+
+.navbar__content__bottom__lang .dropdown .dropdown-toggle { background: none; color: #49535e; font-family: "OpenSans Regular"; cursor: pointer; }
+
+.navbar__content__bottom__lang .dropdown .dropdown-toggle img { margin-right: 12px; }
+
+.navbar__content__bottom__lang .dropdown .dropdown-toggle::after { margin-left: 9px; }
+
+.navbar__content__bottom__lang .dropdown .dropdown-toggle:hover { color: #4aae34; }
+
+.hero { position: relative; margin-bottom: 150px; }
+
+.hero h1 { max-width: 734px; margin-bottom: 36px; }
+
+.hero p, .hero .footer a, .footer .hero a { margin-bottom: 60px; }
+
+.hero .buttons a:first-child { margin-right: 24px; }
+
+.hero img { position: absolute; right: -130px; top: 0; }
 
 .footer { padding-top: 72px; padding-bottom: 72px; position: relative; }
 
@@ -3096,4 +3142,18 @@ input::-webkit-input-placeholder { color: #afafaf; }
 @media (max-width: 992px) { .footer .tomato-bg { bottom: auto; top: 180px; } }
 
 @media (max-width: 768px) { .footer .tomato-bg { top: auto; bottom: 250px; right: 111px; left: auto; } }
+
+.home-page .product-cat { margin-bottom: 150px; }
+
+.home-page .product-cat .cetegories > div .cta { padding: 43px 48px; border-radius: 4px; background-color: #ffffff; border: 1px solid #d7d7d7; height: 250px; }
+
+.home-page .product-cat .cetegories > div .cta h4 { margin-bottom: 36px; }
+
+.home-page .product-cat .cetegories > div .cetegory { border: 1px solid #d7d7d7; margin-bottom: 18px; padding: 24px; height: 250px; background-repeat: no-repeat; background-position: bottom right; border-radius: 4px; }
+
+@media (max-width: 992px) { .home-page .product-cat .cetegories > div .cetegory { height: 220px; padding: 21px; margin-bottom: 24px; }
+  .home-page .product-cat .cetegories > div .cta { margin-bottom: 24px; height: 220px; padding: 17px 24px; }
+  .home-page .product-cat .cetegories > div .cta h4 { margin-bottom: 18px; } }
+
+@media (max-width: 768px) { .home-page .product-cat .cetegories > div .cta { padding: 17px 24px; height: 172px; padding: 19px 24px; } }
 /*# sourceMappingURL=style.css.map */

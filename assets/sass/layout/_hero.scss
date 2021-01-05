@@ -1,0 +1,21 @@
+.hero{
+	position: relative;
+	margin-bottom: 150px;
+	h1{
+		max-width: 734px;
+		margin-bottom: 36px;
+	}
+	p{
+		margin-bottom: 60px;
+	}
+	.buttons{
+		a:first-child{
+			margin-right: 24px;
+		}
+	}
+	img{
+		position: absolute;
+		right: -130px;
+		top: 0;
+	}
+}

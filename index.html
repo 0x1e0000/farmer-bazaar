@@ -23,8 +23,9 @@
 	<!-- <link rel="shortcut icon" href="./assets/img/favicon/favicon.ico"> -->
 </head>
 
-<body>
-	<header class="main-header container">
+<body class="home-page">
+
+	<header class="main-header">
 		<div class="logo">
 			<img src="./assets/img/logo/logo.svg" alt="Logo">
 		</div>
@@ -34,7 +35,7 @@
 					<div class="navbar__content__top__links">
 						<div>
 							<img src="./assets/img/icons/heart.svg" alt="invite friends">
-							<p>Invite friends & get Rs.250 OFF</p>
+							<p>Invite friends <br>& get Rs.250 OFF</p>
 						</div>
 						<div>
 							<img src="./assets/img/icons/Whatsapp.svg" alt="WhatsApp">
@@ -64,7 +65,7 @@
 					</div>
 				</div>
 				<div class="navbar__content__bottom">
-					<form action="" class="navbar__content__bottom__search">
+					<form class="navbar__content__bottom__search" action="">
 						<div class="input-group">
 							<div class="pin-field">
 								<svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -76,8 +77,8 @@
 								</svg>
 								<input type="text" placeholder="Enter Pin">
 							</div>
-							<div class="counries">
-								<img src="./assets/img/icons/location.svg" alt="">
+							<div class="countries">
+								<img src="./assets/img/icons/location.svg" alt="Location">
 								<select class="country-select">
 									<option value="Kathmandu" selected>Kathmandu</option>
 									<option value="...">...</option>
@@ -128,7 +129,7 @@
 					</div>
 					<div class="navbar__content__bottom__lang">
 						<div class="dropdown">
-							<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+							<button class="dropdown-toggle" type="button" id="dropdownMenuButton"
 								data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 								<img src="./assets/img/flags/npl.svg" alt="">
 								NPL
@@ -160,10 +161,83 @@
 				</div>
 			</div>
 		</nav>
-		<div class="hero">
-
-		</div>
 	</header>
+
+	<section class="hero container">
+		<h1>The freshest produce delivered directly from Farmers of Nepal</h1>
+		<p>Order for Delivery or Pick Up at your closest store</p>
+		<div class="buttons">
+			<a href="#" class="btn btn-primary">Order online</a>
+			<a href="#" class="btn btn-outline-primary">Download the app</a>
+		</div>
+		<img src="./assets/img/backgrounds/hero.svg" alt="Hero">
+	</section>
+
+	<section class="product-cat container">
+		<header>
+			<h2>Product categories</h2>
+			<p>Clean & Hygienic Foods for Your Safety</p>
+		</header>
+		<div class="cetegories row">
+			<div class="col-lg-6 col-md-4 col-sm-12 col-12">
+				<div class="cta">
+					<h4>Get your every day needs at the best prices assured</h4>
+					<a href="#" class="btn btn-primary">Get started</a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/1.png);">
+					<h4>Fresh Fruits</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/2.png);">
+					<h4>Vegetables</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/3.png);">
+					<h4>Dairy</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/4.png);">
+					<h4>Spices</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/5.png);">
+					<h4>Cooking Oils & Ghee</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/6.png);">
+					<h4>Staples & Grocery</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/7.png);">
+					<h4>Beverages</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/8.png);">
+					<h4>Dry Fruits & Nuts</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/9.png);">
+					<h4>Sweets & Chocolates</h4>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
+				<div class="cetegory" style="background-image: url(./assets/img/backgrounds/products/10.png);">
+					<h4>Snacks & Savouries</h4>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<footer class="footer bg-green d-none">
 		<img class="tomato-bg" src="./assets/img/backgrounds/tomato2.svg" alt="Tomato">
 		<div class="container">
@@ -274,6 +348,7 @@
 			</div>
 		</div>
 	</footer>
+
 	<!-- Plugins
 	================================================== -->
 
