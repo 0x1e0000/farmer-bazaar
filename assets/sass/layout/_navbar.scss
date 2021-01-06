@@ -1,96 +1,154 @@
-.navbar{
+.navbar {
 	@include flex(flex-start, flex-start);
 	flex-direction: column;
 	margin-bottom: 84px;
 
-	&__content{
+	&__content {
 		flex: 1;
-		&__top{
+		&__top {
 			display: flex;
 			justify-content: space-between;
-			margin-bottom: 32px;
-			&__links{
+			flex-wrap: wrap;
+			&__links {
+				margin-bottom: 32px;
 				display: flex;
-				& > div{
+				& > div {
 					display: flex;
 					align-items: flex-start;
+					flex-wrap: nowrap;
 				}
-				.button{
+				.button {
 					color: $color-text;
 					margin-bottom: 8px;
 				}
-				& > div{
+				& > div {
 					margin-right: 24px;
-					img{
+					&:last-child {
+						margin-right: 0;
+					}
+					img {
 						margin-right: 14px;
 					}
 				}
+				@include for-size(desktop-down) {
+					flex: 1;
+					justify-content: space-between;
+				}
 			}
-			&__buttons{
+			&__buttons {
+				margin-bottom: 32px;
 				display: flex;
 				align-items: center;
-				a:first-child{
+				a:first-child {
 					margin-right: 24px;
 				}
 			}
 		}
-		&__bottom{
-			@include flex(space-between, center);
-			&__search{
-				.input-group{
+		&__bottom {
+			@include flex(flex-start, center);
+			flex-wrap: wrap;
+
+			&__search {
+				margin-bottom: 36px;
+				margin-right: 28px;
+				.input-group {
 					border: 1px solid $color-gray;
 					border-radius: 8px;
 					padding-left: 15px;
-					.pin-field{
+					flex-wrap: nowrap;
+					.pin-field {
 						display: flex;
 						align-items: center;
-						svg{
-							margin-right: 8px;
+						input {
+							padding: 0 8px;
+							width: 100%;
 						}
 					}
-					.countries{
+					.countries {
 						border-left: 1px solid $color-gray;
 						border-right: 1px solid $color-gray;
 						display: flex;
 						align-items: center;
 						padding: 0 14px;
+						.country-select {
+							padding-right: 9px;
+							&:focus {
+								outline: none;
+							}
+						}
+						img {
+							margin-right: 10px;
+						}
 					}
-					.search-field{
+					.search-field {
 						padding-left: 14px;
+						flex: 1;
+						padding-right: 8px;
+						width: 100%;
+					}
+					.btn {
+						padding: 14px;
+						width: 52px;
+						height: 52px;
+						min-width: 52px;
+						min-height: 52px;
+						@include flex(center, center);
+					}
+				}
+				@include for-size(desktop-down) {
+					margin-right: 0;
+					.btn {
+						margin-left: auto;
 					}
 				}
 			}
-			&__menu{
-				.nav-link{
+			&__navs {
+				margin-bottom: 36px;
+				display: flex;
+				align-items: center;
+			}
+			&__menu {
+				margin-right: 40px;
+				.nav-link {
 					font-family: $font-primary-regular;
 				}
 			}
-			&__icons{
+			&__icons {
 				margin-right: 45px;
-				a:first-child{
+				a:first-child {
 					margin-right: 38px;
 				}
 			}
-			&__lang{
-				.dropdown{
+			&__lang {
+				.dropdown {
 					background: none;
-					.dropdown-toggle{
+					.dropdown-toggle {
 						background: none;
 						color: $color-text;
 						font-family: $font-primary-regular;
 						cursor: pointer;
-						img{
+						img {
 							margin-right: 12px;
 						}
-						&::after{
+						&::after {
 							margin-left: 9px;
 						}
-						&:hover{
+						&:hover {
 							color: $color-primary;
 						}
 					}
 				}
 			}
 		}
+	}
+	@include for-size(desktop-down) {
+		margin-bottom: 24px;
+		&__content__bottom {
+			flex-direction: column;
+			align-items: stretch;
+		}
+	}
+	@include for-size(tablet-landscape-down) {
+		margin-bottom: 12px;
 	}
 }

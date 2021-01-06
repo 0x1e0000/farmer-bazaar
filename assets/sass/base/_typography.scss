@@ -125,7 +125,7 @@ label {
 	}
 }
 // How typogrraphy should looks on mobile version
-@include for-size(phone-only) {
+@include for-size(tablet-portrait-down) {
 	h1 {
 		font-size: 38px;
 		line-height: 46px;

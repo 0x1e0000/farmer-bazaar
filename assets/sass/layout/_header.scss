@@ -4,19 +4,25 @@
 	padding-top: 24px;
 	.info-panel {
 		@include flex(center, flex-start);
-		margin-top: 36px;
 		& > div {
 			display: flex;
-			&:not(:last-child){
+			&:not(:last-child) {
 				border-right: 1px solid $color-gray2;
 				padding-right: 24px;
 				margin-right: 24px;
 			}
 		}
-		.button{
+		.button {
 			color: $color-text;
 			margin-left: 8px;
 			margin-right: 12px;
+		}
+	}
+	@include for-size(tablet-landscape-down) {
+		flex-direction: column;
+		align-items: center;
+		.logo {
+			margin-bottom: 18px;
 		}
 	}
 }

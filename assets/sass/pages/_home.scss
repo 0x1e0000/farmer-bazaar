@@ -1,19 +1,19 @@
-.home-page{
-	.product-cat{
+.home-page {
+	.product-cat {
 		margin-bottom: 150px;
-		.cetegories{
-			& > div{
-				.cta{
+		.cetegories {
+			& > div {
+				.cta {
 					padding: 43px 48px;
 					border-radius: 4px;
 					background-color: $color-white;
 					border: 1px solid $color-gray;
 					height: 250px;
-					h4{
+					h4 {
 						margin-bottom: 36px;
 					}
 				}
-				.cetegory{
+				.cetegory {
 					border: 1px solid $color-gray;
 					margin-bottom: 18px;
 					padding: 24px;
@@ -22,29 +22,32 @@
 					background-position: bottom right;
 					border-radius: 4px;
 				}
-				@include for-size(tablet-landscape-down){
-					.cetegory{
+				@include for-size(tablet-landscape-down) {
+					.cetegory {
 						height: 220px;
 						padding: 21px;
 						margin-bottom: 24px;
 					}
-					.cta{
+					.cta {
 						margin-bottom: 24px;
 						height: 220px;
 						padding: 17px 24px;
-						h4{
+						h4 {
 							margin-bottom: 18px;
 						}
 					}
 				}
-				@include for-size(tablet-portrait-down){
-					.cta{
+				@include for-size(tablet-portrait-down) {
+					.cta {
 						padding: 17px 24px;
 						height: 172px;
 						padding: 19px 24px;
 					}
 				}
 			}
+		}
+		@include for-size(tablet-portrait-down) {
+			margin-bottom: 72px;
 		}
 	}
 }
