@@ -3248,7 +3248,7 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .product-cat .cetegories > div .cta h4 { margin-bottom: 36px; }
 
-.home-page .product-cat .cetegories > div .cetegory { border: 1px solid #d7d7d7; margin-bottom: 18px; padding: 24px; height: 250px; background-repeat: no-repeat; background-position: bottom right; border-radius: 4px; }
+.home-page .product-cat .cetegories > div .cetegory { border: 1px solid #d7d7d7; margin-bottom: 18px; padding: 24px; height: 250px; background-repeat: no-repeat; background-position: bottom right; border-radius: 4px; background-color: #ffffff; }
 
 @media (max-width: 992px) { .home-page .product-cat .cetegories > div .cetegory { height: 220px; padding: 21px; margin-bottom: 24px; }
   .home-page .product-cat .cetegories > div .cta { margin-bottom: 24px; height: 220px; padding: 17px 24px; }
