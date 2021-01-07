@@ -59,8 +59,10 @@
 					.pin-field {
 						display: flex;
 						align-items: center;
+						flex: 1;
 						input {
 							padding: 0 8px;
+							background: none;
 							width: 100%;
 						}
 					}
@@ -72,12 +74,13 @@
 						padding: 0 14px;
 						.country-select {
 							padding-right: 9px;
+							background: none;
 							&:focus {
 								outline: none;
 							}
 						}
 						img {
-							margin-right: 10px;
+							margin-right: 0px !important;
 						}
 					}
 					.search-field {
@@ -101,6 +104,38 @@
 						margin-left: auto;
 					}
 				}
+				@include for-size(tablet-portrait-down) {
+					margin-bottom: 18px;
+					.input-group {
+						padding-left: 4px;
+						.pin-field {
+							flex: 2;
+							font-size: 12px;
+							input {
+								padding: 0 4px;
+							}
+						}
+						.search-field {
+							padding-left: 4px;
+							font-size: 12px;
+						}
+						.countries {
+							padding: 0 5px;
+							font-size: 12px;
+							img {
+								margin-right: 5px;
+								width: 16px;
+							}
+						}
+						.btn {
+							padding: 10px;
+							min-width: 42px;
+							min-height: 42px;
+							width: 42px;
+							height: 42px;
+						}
+					}
+				}
 			}
 			&__navs {
 				margin-bottom: 36px;
@@ -115,8 +150,20 @@
 			}
 			&__icons {
 				margin-right: 45px;
-				a:first-child {
-					margin-right: 38px;
+				a {
+					svg {
+						transition: transform 300ms ease;
+					}
+					&:first-child {
+						margin-right: 38px;
+					}
+					&:active,
+					&:hover {
+						svg {
+							transition: transform 300ms ease;
+							transform: scale(0.95);
+						}
+					}
 				}
 			}
 			&__lang {
@@ -149,6 +196,9 @@
 		}
 	}
 	@include for-size(tablet-landscape-down) {
-		margin-bottom: 12px;
+		margin-bottom: 0;
+		.navbar__content__bottom__navs {
+			margin-bottom: 48px;
+		}
 	}
 }

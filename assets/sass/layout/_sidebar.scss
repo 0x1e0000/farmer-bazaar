@@ -1,0 +1,81 @@
+.navbar {
+	.sidebar {
+		z-index: 9;
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		right: 0;
+		background-image: url("../img/backgrounds/bg.jpg");
+		background-size: contain;
+		padding: 48px 37px;
+		transition: top 700ms ease;
+		display: flex;
+		flex-direction: column;
+		max-height: 100vh;
+		label[for="toggle-menu"] {
+			align-self: flex-end;
+		}
+		.button {
+			color: $color-text;
+		}
+		&__links {
+			padding-bottom: 36px;
+			border-bottom: 1px solid $color-gray2;
+			margin-bottom: 36px;
+			.row > div:nth-child(1) {
+				display: flex;
+				justify-content: center;
+				margin-bottom: 48px;
+				br {
+					display: none;
+				}
+				img {
+					margin-right: 13px;
+				}
+			}
+		}
+		&__info {
+		}
+		&__buttons {
+			align-self: center;
+			a:first-child {
+				margin-right: 24px;
+				padding-left: 35px;
+				padding-right: 35px;
+			}
+			a {
+				min-width: auto;
+				padding-top: 12px;
+				padding-bottom: 12px;
+			}
+		}
+	}
+	label[for="toggle-menu"] {
+		cursor: pointer;
+		transition: transform 300ms ease;
+		margin-bottom: 0;
+		&:active,
+		&:hover {
+			transition: transform 300ms ease;
+			transform: scale(0.95);
+		}
+	}
+	#toggle-menu {
+		&:checked ~ .sidebar {
+			top: 0;
+			transition: top 400ms ease;
+		}
+	}
+	@include for-size(tablet-landscape-down) {
+		.sidebar {
+			padding: 10px 30px 30px;
+			&__links {
+				padding-bottom: 24px;
+				margin-bottom: 24px;
+			}
+			&__buttons {
+				margin-top: 24px;
+			}
+		}
+	}
+}

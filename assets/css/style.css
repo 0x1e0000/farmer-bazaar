@@ -2868,7 +2868,7 @@ section header h2 { margin-bottom: 18px; }
 /** 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using `em` units. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
 html { font-size: 100%; /* 1 */ -webkit-text-size-adjust: 100%; /* 2 */ -ms-text-size-adjust: 100%; /* 2 */ }
 
-body { background-color: #fcfcfc; overflow-x: hidden; }
+body { background-image: url(../img/backgrounds/bg.jpg); background-size: contain; overflow-x: hidden; }
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
@@ -3054,7 +3054,7 @@ input::-webkit-input-placeholder { color: #afafaf; }
 .main-header .info-panel .button { color: #49535e; margin-left: 8px; margin-right: 12px; }
 
 @media (max-width: 992px) { .main-header { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-  .main-header .logo { margin-bottom: 18px; } }
+  .main-header .logo { margin-bottom: 18px; width: 100px; } }
 
 .navbar { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; margin-bottom: 84px; }
 
@@ -3086,17 +3086,17 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .navbar__content__bottom__search .input-group { border: 1px solid #d7d7d7; border-radius: 8px; padding-left: 15px; -ms-flex-wrap: nowrap; flex-wrap: nowrap; }
 
-.navbar__content__bottom__search .input-group .pin-field { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.navbar__content__bottom__search .input-group .pin-field { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
-.navbar__content__bottom__search .input-group .pin-field input { padding: 0 8px; width: 100%; }
+.navbar__content__bottom__search .input-group .pin-field input { padding: 0 8px; background: none; width: 100%; }
 
 .navbar__content__bottom__search .input-group .countries { border-left: 1px solid #d7d7d7; border-right: 1px solid #d7d7d7; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 0 14px; }
 
-.navbar__content__bottom__search .input-group .countries .country-select { padding-right: 9px; }
+.navbar__content__bottom__search .input-group .countries .country-select { padding-right: 9px; background: none; }
 
 .navbar__content__bottom__search .input-group .countries .country-select:focus { outline: none; }
 
-.navbar__content__bottom__search .input-group .countries img { margin-right: 10px; }
+.navbar__content__bottom__search .input-group .countries img { margin-right: 0px !important; }
 
 .navbar__content__bottom__search .input-group .search-field { padding-left: 14px; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding-right: 8px; width: 100%; }
 
@@ -3104,6 +3104,15 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 @media (max-width: 1200px) { .navbar__content__bottom__search { margin-right: 0; }
   .navbar__content__bottom__search .btn { margin-left: auto; } }
+
+@media (max-width: 768px) { .navbar__content__bottom__search { margin-bottom: 18px; }
+  .navbar__content__bottom__search .input-group { padding-left: 4px; }
+  .navbar__content__bottom__search .input-group .pin-field { -webkit-box-flex: 2; -ms-flex: 2; flex: 2; font-size: 12px; }
+  .navbar__content__bottom__search .input-group .pin-field input { padding: 0 4px; }
+  .navbar__content__bottom__search .input-group .search-field { padding-left: 4px; font-size: 12px; }
+  .navbar__content__bottom__search .input-group .countries { padding: 0 5px; font-size: 12px; }
+  .navbar__content__bottom__search .input-group .countries img { margin-right: 5px; width: 16px; }
+  .navbar__content__bottom__search .input-group .btn { padding: 10px; min-width: 42px; min-height: 42px; width: 42px; height: 42px; } }
 
 .navbar__content__bottom__navs { margin-bottom: 36px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
@@ -3113,7 +3122,11 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .navbar__content__bottom__icons { margin-right: 45px; }
 
+.navbar__content__bottom__icons a svg { -webkit-transition: -webkit-transform 300ms ease; transition: -webkit-transform 300ms ease; transition: transform 300ms ease; transition: transform 300ms ease, -webkit-transform 300ms ease; }
+
 .navbar__content__bottom__icons a:first-child { margin-right: 38px; }
+
+.navbar__content__bottom__icons a:active svg, .navbar__content__bottom__icons a:hover svg { -webkit-transition: -webkit-transform 300ms ease; transition: -webkit-transform 300ms ease; transition: transform 300ms ease; transition: transform 300ms ease, -webkit-transform 300ms ease; -webkit-transform: scale(0.95); transform: scale(0.95); }
 
 .navbar__content__bottom__lang .dropdown { background: none; }
 
@@ -3128,7 +3141,38 @@ input::-webkit-input-placeholder { color: #afafaf; }
 @media (max-width: 1200px) { .navbar { margin-bottom: 24px; }
   .navbar__content__bottom { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; } }
 
-@media (max-width: 992px) { .navbar { margin-bottom: 12px; } }
+@media (max-width: 992px) { .navbar { margin-bottom: 0; }
+  .navbar .navbar__content__bottom__navs { margin-bottom: 48px; } }
+
+.navbar .sidebar { z-index: 9; position: fixed; top: -100vh; left: 0; right: 0; background-image: url("../img/backgrounds/bg.jpg"); background-size: contain; padding: 48px 37px; -webkit-transition: top 700ms ease; transition: top 700ms ease; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; max-height: 100vh; }
+
+.navbar .sidebar label[for="toggle-menu"] { -ms-flex-item-align: end; align-self: flex-end; }
+
+.navbar .sidebar .button { color: #49535e; }
+
+.navbar .sidebar__links { padding-bottom: 36px; border-bottom: 1px solid #868888; margin-bottom: 36px; }
+
+.navbar .sidebar__links .row > div:nth-child(1) { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 48px; }
+
+.navbar .sidebar__links .row > div:nth-child(1) br { display: none; }
+
+.navbar .sidebar__links .row > div:nth-child(1) img { margin-right: 13px; }
+
+.navbar .sidebar__buttons { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
+
+.navbar .sidebar__buttons a:first-child { margin-right: 24px; padding-left: 35px; padding-right: 35px; }
+
+.navbar .sidebar__buttons a { min-width: auto; padding-top: 12px; padding-bottom: 12px; }
+
+.navbar label[for="toggle-menu"] { cursor: pointer; -webkit-transition: -webkit-transform 300ms ease; transition: -webkit-transform 300ms ease; transition: transform 300ms ease; transition: transform 300ms ease, -webkit-transform 300ms ease; margin-bottom: 0; }
+
+.navbar label[for="toggle-menu"]:active, .navbar label[for="toggle-menu"]:hover { -webkit-transition: -webkit-transform 300ms ease; transition: -webkit-transform 300ms ease; transition: transform 300ms ease; transition: transform 300ms ease, -webkit-transform 300ms ease; -webkit-transform: scale(0.95); transform: scale(0.95); }
+
+.navbar #toggle-menu:checked ~ .sidebar { top: 0; -webkit-transition: top 400ms ease; transition: top 400ms ease; }
+
+@media (max-width: 992px) { .navbar .sidebar { padding: 10px 30px 30px; }
+  .navbar .sidebar__links { padding-bottom: 24px; margin-bottom: 24px; }
+  .navbar .sidebar__buttons { margin-top: 24px; } }
 
 .hero { position: relative; margin-bottom: 150px; }
 
