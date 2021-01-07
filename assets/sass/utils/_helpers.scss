@@ -1,18 +1,37 @@
-.bg-green{
+.bg-green {
 	background-color: $color-secondary-bg;
 }
 
-section{
-	header{
+section {
+	header {
 		text-align: center;
 		margin-bottom: 60px;
-		h2{
+		h2 {
 			margin-bottom: 18px;
 		}
 	}
 }
 
-.bg-illus{
+.bg-illus {
 	position: absolute;
 	pointer-events: none;
+}
+
+.owl-nav {
+	display: flex;
+	button {
+		border: 1px solid $color-primary !important;
+		border-radius: 50%;
+		width: 60px;
+		height: 60px;
+		@include flex(center, center);
+		&.disabled {
+			border-color: $color-gray !important;
+			svg {
+				path {
+					stroke: $color-gray;
+				}
+			}
+		}
+	}
 }
