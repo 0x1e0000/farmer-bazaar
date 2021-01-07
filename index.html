@@ -146,8 +146,8 @@
 								</div>
 							</div>
 						</div>
-						<input type="checkbox" checked class="d-none" id="toggle-menu">
-						<label class="ml-auto d-block d-xl-none" for="toggle-menu">
+						<input type="checkbox" class="d-none" id="toggle-menu">
+						<label class="ml-auto d-block d-lg-none" for="toggle-menu">
 							<svg width="36" height="36" viewBox="0 0 36 36" fill="none"
 								xmlns="http://www.w3.org/2000/svg">
 								<path d="M9 18H27" stroke="#49535E" stroke-width="2" stroke-linecap="round"
@@ -158,8 +158,8 @@
 									stroke-linejoin="round" />
 							</svg>
 						</label>
-						<aside class="sidebar shadow-sm">
-							<label class="ml-auto d-block d-xl-none" for="toggle-menu">
+						<aside class="sidebar shadow-sm d-flex d-lg-none">
+							<label class="ml-auto" for="toggle-menu">
 								<svg width="36" height="37" viewBox="0 0 36 37" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<path d="M24 12.1812L12 24.1812" stroke="#49535E" stroke-width="2"
@@ -171,25 +171,25 @@
 							<div>
 								<div class="sidebar__links">
 									<div class="row mb-0">
-										<div class="col-md-12 col-sm-6 col-6">
+										<div class="col-md-12 col-sm-6 col-6 d-flex">
 											<img src="./assets/img/icons/heart.svg" alt="invite friends">
 											<p>Invite friends <br>& get Rs.250 OFF</p>
 										</div>
-										<div class="col-md-4 col-sm-6 col-6">
+										<div class="col-md-4 col-sm-6 col-6 d-md-none d-xl-block">
 											<img src="./assets/img/icons/Whatsapp.svg" alt="WhatsApp">
 											<div>
-												<span class="button">WhatsApp us your orders!</span>
+												<span class="button">WhatsApp</span>
 												<p>+977 98011 43736</p>
 											</div>
 										</div>
-										<div class="col-md-4 col-sm-6 col-6">
+										<div class="col-md-4 col-sm-6 col-6 d-md-none d-xl-block">
 											<img src="./assets/img/icons/Viber.svg" alt="Viber">
 											<div>
 												<span class="button">Call us in Viber</span>
 												<p>+977 98011 43736</p>
 											</div>
 										</div>
-										<div class="col-md-4 col-sm-6 col-6">
+										<div class="col-md-4 col-sm-6 col-6 d-md-none d-xl-block">
 											<img src="./assets/img/icons/phone-green.svg" alt="Phone number">
 											<div>
 												<span class="button">Phone number</span>
@@ -201,19 +201,31 @@
 								<div class="sidebar__info">
 									<div class="row">
 										<div class="col-md-4 col-sm-6 col-6">
-											<img src="./assets/img/icons/wallet.svg" alt="wallet">
-											<span class="button">Wallet balance:</span>
-											<p>Rs. 23,420.55</p>
+											<div>
+												<img src="./assets/img/icons/wallet.svg" alt="wallet">
+												<div>
+													<span class="button">Wallet balance:</span>
+													<p>Rs. 23,420.55</p>
+												</div>
+											</div>
 										</div>
 										<div class="col-md-4 col-sm-6 col-6">
-											<img src="./assets/img/icons/reward.svg" alt="reward">
-											<span class="button">Reward points:</span>
-											<p>3210</p>
+											<div>
+												<img src="./assets/img/icons/reward.svg" alt="reward">
+												<div>
+													<span class="button">Reward points:</span>
+													<p>3210</p>
+												</div>
+											</div>
 										</div>
 										<div class="col-md-4 col-sm-6 col-6">
-											<img src="./assets/img/icons/location-green.svg" alt="location">
-											<span class="button">Location:</span>
-											<p>Mitra Park, Kathmandu</p>
+											<div class="border-0">
+												<img src="./assets/img/icons/location-green.svg" alt="location">
+												<div>
+													<span class="button">Location:</span>
+													<p>Mitra Park, Kathmandu</p>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>

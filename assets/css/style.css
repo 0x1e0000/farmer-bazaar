@@ -3152,13 +3152,17 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .navbar .sidebar .button { color: #49535e; }
 
-.navbar .sidebar__links { padding-bottom: 36px; border-bottom: 1px solid #868888; margin-bottom: 36px; }
-
-.navbar .sidebar__links .row > div:nth-child(1) { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-bottom: 48px; }
+.navbar .sidebar__links .row > div:nth-child(1) { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 
 .navbar .sidebar__links .row > div:nth-child(1) br { display: none; }
 
 .navbar .sidebar__links .row > div:nth-child(1) img { margin-right: 13px; }
+
+.navbar .sidebar__info .row > div > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; border-right: 1px solid #868888; }
+
+.navbar .sidebar__info .row > div > div img { margin-right: 10px; position: relative; top: 3px; }
+
+.navbar .sidebar__info .row > div > div .button { margin-bottom: 8px; display: block; }
 
 .navbar .sidebar__buttons { -ms-flex-item-align: center; -ms-grid-row-align: center; align-self: center; }
 
@@ -3173,8 +3177,15 @@ input::-webkit-input-placeholder { color: #afafaf; }
 .navbar #toggle-menu:checked ~ .sidebar { top: 0; -webkit-transition: top 400ms ease; transition: top 400ms ease; }
 
 @media (max-width: 992px) { .navbar .sidebar { padding: 10px 30px 30px; }
-  .navbar .sidebar__links { padding-bottom: 24px; margin-bottom: 24px; }
-  .navbar .sidebar__buttons { margin-top: 24px; } }
+  .navbar .sidebar__links { margin-bottom: 48px; }
+  .navbar .sidebar__buttons { margin-top: 48px; } }
+
+@media (max-width: 768px) { .navbar .sidebar__links { border-bottom: 1px solid #868888; padding-bottom: 36px; margin-bottom: 36px; }
+  .navbar .sidebar__links .row > div { margin-bottom: 16px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+  .navbar .sidebar__links .row > div:nth-child(1) { -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; }
+  .navbar .sidebar__links .row > div img { margin-right: 18px; }
+  .navbar .sidebar__info .row > div > div { border: none; margin-bottom: 18px; }
+  .navbar .sidebar__buttons { margin-top: 18px; } }
 
 .hero { position: relative; margin-bottom: 150px; }
 
