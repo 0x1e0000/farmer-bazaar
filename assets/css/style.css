@@ -2863,6 +2863,8 @@ section header { text-align: center; margin-bottom: 60px; }
 
 section header h2 { margin-bottom: 18px; }
 
+.bg-illus { position: absolute; pointer-events: none; }
+
 * { margin: 0px; padding: 0px; -webkit-box-sizing: border-box; box-sizing: border-box; border: 0; vertical-align: baseline; }
 
 /** 1. Correct text resizing oddly in IE 6/7 when body `font-size` is set using `em` units. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
@@ -3223,7 +3225,13 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 @media (max-width: 768px) { .footer .tomato-bg { top: auto; bottom: 250px; right: 111px; left: auto; } }
 
-.home-page .product-cat { margin-bottom: 150px; }
+.home-page .product-cat { margin-bottom: 150px; position: relative; }
+
+.home-page .product-cat .bg-illustrations .bg-illus:nth-child(1) { top: -100px; left: -91px; }
+
+.home-page .product-cat .bg-illustrations .bg-illus:nth-child(2) { bottom: 40px; right: -250px; }
+
+.home-page .product-cat .bg-illustrations .bg-illus:nth-child(3) { bottom: -180px; left: -250px; }
 
 .home-page .product-cat .cetegories > div .cta { padding: 43px 48px; border-radius: 4px; background-color: #ffffff; border: 1px solid #d7d7d7; height: 250px; }
 
@@ -3237,5 +3245,11 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 @media (max-width: 768px) { .home-page .product-cat .cetegories > div .cta { padding: 17px 24px; height: 172px; padding: 19px 24px; } }
 
-@media (max-width: 768px) { .home-page .product-cat { margin-bottom: 72px; } }
+@media (max-width: 992px) { .home-page .product-cat { margin-bottom: 72px; }
+  .home-page .product-cat .bg-illustrations .bg-illus:nth-child(1) { top: -100px; left: -91px; }
+  .home-page .product-cat .bg-illustrations .bg-illus:nth-child(2) { display: none; }
+  .home-page .product-cat .bg-illustrations .bg-illus:nth-child(3) { left: auto; right: -80px; bottom: -90px; } }
+
+@media (max-width: 768px) { .home-page .product-cat .bg-illustrations .bg-illus:nth-child(1) { width: 100px; top: -90px; left: 0; }
+  .home-page .product-cat .bg-illustrations .bg-illus:nth-child(3) { right: 0px; bottom: -150px; width: 130px; } }
 /*# sourceMappingURL=style.css.map */
