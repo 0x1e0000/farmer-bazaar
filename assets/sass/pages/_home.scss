@@ -255,29 +255,52 @@
 				background-repeat: no-repeat;
 				background-position: center;
 				background-color: #fcfcfc;
-				padding: 40px 103px;
 				position: relative;
 				border-radius: 8px;
-				background-size: contain;
-				h2 {
-					margin-bottom: 24px;
-					max-width: 478px;
-				}
-				p {
-					position: absolute;
-					bottom: 16px;
-					right: 16px;
-					text-align: right;
-					max-width: 141px;
-				}
-				.btn {
-					padding: 14px 65px;
-				}
 				&.one {
+					padding: 40px 103px;
 					background-image: url(../img/backgrounds/dealsCarousel/1.jpg);
+					background-size: contain;
+					h2 {
+						margin-bottom: 24px;
+						max-width: 478px;
+					}
+					.btn {
+						padding: 14px 65px;
+					}
+					p {
+						position: absolute;
+						bottom: 16px;
+						right: 16px;
+						text-align: right;
+						max-width: 141px;
+					}
 				}
 				&.two {
 					background-image: url(../img/backgrounds/dealsCarousel/2.jpg);
+					padding-top: 63px;
+					padding-bottom: 84px;
+					padding-left: 100px;
+					background-size: cover;
+					p {
+						color: $color-accent2;
+						font-family: $font-primary-bold;
+						margin-bottom: 9px;
+						text-transform: uppercase;
+						font-size: 24px;
+					}
+					h2 {
+						margin-bottom: 9px;
+						color: $color-accent2;
+						span {
+							color: $color-primary;
+						}
+					}
+					.button {
+						color: $color-text;
+						margin-bottom: 40px;
+						display: block;
+					}
 				}
 				&.three {
 					background-image: url(../img/backgrounds/dealsCarousel/3.jpg);
