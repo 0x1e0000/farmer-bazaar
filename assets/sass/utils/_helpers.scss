@@ -10,6 +10,16 @@ section {
 			margin-bottom: 18px;
 		}
 	}
+	@include for-size(tablet-landscape-down) {
+		header {
+			margin-bottom: 48px;
+		}
+	}
+	@include for-size(tablet-portrait-down) {
+		header {
+			margin-bottom: 36px;
+		}
+	}
 }
 
 .bg-illus {

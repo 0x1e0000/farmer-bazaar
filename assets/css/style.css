@@ -2944,6 +2944,10 @@ section header { text-align: center; margin-bottom: 60px; }
 
 section header h2 { margin-bottom: 18px; }
 
+@media (max-width: 992px) { section header { margin-bottom: 48px; } }
+
+@media (max-width: 768px) { section header { margin-bottom: 36px; } }
+
 .bg-illus { position: absolute; pointer-events: none; }
 
 .owl-nav { display: -webkit-box; display: -ms-flexbox; display: flex; }
@@ -3403,17 +3407,25 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .deals { margin-bottom: 123px; position: relative; }
 
-.home-page .deals__carousel .carousel-container { background-repeat: no-repeat; background-position: center; background-color: #fcfcfc; position: relative; border-radius: 8px; }
+.home-page .deals .bg-illustrations .bg-illus:nth-child(1) { top: -100px; left: -230px; }
 
-.home-page .deals__carousel .carousel-container.one { padding: 40px 103px; background-image: url(../img/backgrounds/dealsCarousel/1.jpg); background-size: contain; }
+.home-page .deals .bg-illustrations .bg-illus:nth-child(2) { bottom: -280px; left: -50px; }
+
+.home-page .deals .carousel__holder { height: 400px; }
+
+.home-page .deals__carousel .carousel-container { background-repeat: no-repeat; background-position: center; background-color: #fcfcfc; position: relative; border-radius: 8px; border: 2px solid #d7d7d7; height: 400px; }
+
+.home-page .deals__carousel .carousel-container .btn { padding: 14px 65px; }
+
+.home-page .deals__carousel .carousel-container.one { padding: 40px 103px; background-image: url(../img/backgrounds/dealsCarousel/1.jpg); background-position: 80%; background-size: contain; }
 
 .home-page .deals__carousel .carousel-container.one h2 { margin-bottom: 24px; max-width: 478px; }
 
-.home-page .deals__carousel .carousel-container.one .btn { padding: 14px 65px; }
+.home-page .deals__carousel .carousel-container.one h2 span { color: #4aae34; }
 
-.home-page .deals__carousel .carousel-container.one p, .home-page .deals__carousel .carousel-container.one .footer a, .footer .home-page .deals__carousel .carousel-container.one a { position: absolute; bottom: 16px; right: 16px; text-align: right; max-width: 141px; }
+.home-page .deals__carousel .carousel-container.one p, .home-page .deals__carousel .carousel-container.one .footer a, .footer .home-page .deals__carousel .carousel-container.one a { position: absolute; bottom: 16px; right: 16px; text-align: right; max-width: 141px; border-radius: 4px; padding: 8px; }
 
-.home-page .deals__carousel .carousel-container.two { background-image: url(../img/backgrounds/dealsCarousel/2.jpg); padding-top: 63px; padding-bottom: 84px; padding-left: 100px; background-size: cover; }
+.home-page .deals__carousel .carousel-container.two { background-image: url(../img/backgrounds/dealsCarousel/2.jpg); background-position: 100% 100%; padding-top: 63px; padding-bottom: 84px; padding-left: 100px; }
 
 .home-page .deals__carousel .carousel-container.two p, .home-page .deals__carousel .carousel-container.two .footer a, .footer .home-page .deals__carousel .carousel-container.two a { color: #f0801b; font-family: "OpenSans Bold"; margin-bottom: 9px; text-transform: uppercase; font-size: 24px; }
 
@@ -3423,11 +3435,50 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .deals__carousel .carousel-container.two .button { color: #49535e; margin-bottom: 40px; display: block; }
 
-.home-page .deals__carousel .carousel-container.three { background-image: url(../img/backgrounds/dealsCarousel/3.jpg); }
+.home-page .deals__carousel .carousel-container.three { background-image: url(../img/backgrounds/dealsCarousel/3.jpg); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-right: 64px; }
 
-.home-page .deals__carousel .carousel-container.four { background-image: url(../img/backgrounds/dealsCarousel/4.jpg); }
+.home-page .deals__carousel .carousel-container.three div { text-align: center; }
+
+.home-page .deals__carousel .carousel-container.three div h2 { padding: 21px 24px; color: #ffffff; border: 8px solid; margin-bottom: 7px; }
+
+.home-page .deals__carousel .carousel-container.three div h2 img { width: 51px; height: 84px; display: inline-block; }
+
+.home-page .deals__carousel .carousel-container.three div p, .home-page .deals__carousel .carousel-container.three div .footer a, .footer .home-page .deals__carousel .carousel-container.three div a { margin-bottom: 36px; color: #ffffff; font-family: "OpenSans Bold"; font-size: 24px; text-transform: uppercase; }
+
+.home-page .deals__carousel .carousel-container.four { background-image: url(../img/backgrounds/dealsCarousel/4.jpg); position: relative; }
+
+.home-page .deals__carousel .carousel-container.four .btn { position: absolute; bottom: 130px; right: 130px; }
+
+@media (max-width: 1200px) { .home-page .deals__carousel .carousel-container.one { background-position: 100%; }
+  .home-page .deals__carousel .carousel-container.one p, .home-page .deals__carousel .carousel-container.one .footer a, .footer .home-page .deals__carousel .carousel-container.one a { background: #ffffff; }
+  .home-page .deals__carousel .carousel-container.two { background-size: 120%; background-position: 90% 100%; }
+  .home-page .deals__carousel .carousel-container.four { background-position: right; }
+  .home-page .deals__carousel .carousel-container.four .btn { right: 151px; } }
+
+@media (max-width: 992px) { .home-page .deals__carousel .carousel-container.one { padding: 40px 36px; }
+  .home-page .deals__carousel .carousel-container.one h2 { max-width: 388px; margin-bottom: 32px; }
+  .home-page .deals__carousel .carousel-container.one p, .home-page .deals__carousel .carousel-container.one .footer a, .footer .home-page .deals__carousel .carousel-container.one a { max-width: 217px; }
+  .home-page .deals__carousel .carousel-container.two { padding: 40px 36px; } }
+
+@media (max-width: 768px) { .home-page .deals__carousel .carousel-container.one { padding: 17px 15px; background-position: 145% 100%; background-size: 70%; }
+  .home-page .deals__carousel .carousel-container.one h2 { max-width: 194px; margin-bottom: 24px; font-size: 24px; line-height: 36px; }
+  .home-page .deals__carousel .carousel-container.two { padding: 17px 15px; background-size: 160%; background-position: 100% 100%; }
+  .home-page .deals__carousel .carousel-container.three { -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 17px 15px; }
+  .home-page .deals__carousel .carousel-container.three div h2 { padding: 10px; border: 6px solid; }
+  .home-page .deals__carousel .carousel-container.three div h2 img { height: auto; }
+  .home-page .deals__carousel .carousel-container.three div p, .home-page .deals__carousel .carousel-container.three div .footer a, .footer .home-page .deals__carousel .carousel-container.three div a { font-size: 18px; margin-bottom: 24px; margin-top: 14px; }
+  .home-page .deals__carousel .carousel-container.four { background-position: 91%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+  .home-page .deals__carousel .carousel-container.four .btn { position: static; margin-top: 70px; } }
 
 .home-page .deals__carousel .owl-nav { position: absolute; top: 50%; right: 0; top: -100px; -webkit-transform: translateY(-50%); transform: translateY(-50%); }
 
 .home-page .deals__carousel .owl-nav button:first-child { margin-right: 24px; }
+
+@media (max-width: 992px) { .home-page .deals { margin-bottom: 70px; }
+  .home-page .deals__carousel { position: absolute; width: 100vw; }
+  .home-page .deals__carousel .item { width: 627px; }
+  .home-page .deals .bg-illustrations .bg-illus:nth-child(2) { bottom: -230px; left: auto; right: 0; } }
+
+@media (max-width: 768px) { .home-page .deals__carousel .item { width: 303px; }
+  .home-page .deals .bg-illustrations .bg-illus:nth-child(2) { display: none; } }
 /*# sourceMappingURL=style.css.map */
