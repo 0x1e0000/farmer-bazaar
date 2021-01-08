@@ -39,6 +39,8 @@
 					background-color: $color-white;
 				}
 				@include for-size(tablet-landscape-down) {
+					padding-right: 6px;
+					padding-left: 6px;
 					.cetegory {
 						height: 220px;
 						padding: 21px;
@@ -54,6 +56,9 @@
 					}
 				}
 				@include for-size(tablet-portrait-down) {
+					.cetegory {
+						margin-bottom: 12px;
+					}
 					.cta {
 						padding: 17px 24px;
 						height: 172px;
@@ -257,7 +262,7 @@
 					left: -230px;
 				}
 				&:nth-child(2) {
-					bottom: -280px;
+					bottom: -291px;
 					left: -50px;
 				}
 			}
@@ -423,6 +428,7 @@
 
 								img {
 									height: auto;
+									width: 35px;
 								}
 							}
 							p {
@@ -446,7 +452,7 @@
 				position: absolute;
 				top: 50%;
 				right: 0;
-				top: -100px;
+				top: -88px;
 				transform: translateY(-50%);
 				button {
 					&:first-child {
@@ -457,25 +463,32 @@
 		}
 
 		@include for-size(tablet-landscape-down) {
-			margin-bottom: 70px;
+			margin-bottom: 120px;
 			&__carousel {
 				position: absolute;
-				width: 100vw;
+				width: 96vw;
 				.item {
 					width: 627px;
+				}
+				.owl-nav,
+				.owl-dots {
+					display: none;
 				}
 			}
 			.bg-illustrations {
 				.bg-illus {
 					&:nth-child(2) {
-						bottom: -230px;
+						bottom: -200px;
 						left: auto;
-						right: 0;
+						right: -20px;
+						width: 250px;
 					}
 				}
 			}
 		}
 		@include for-size(tablet-portrait-down) {
+			margin-bottom: 74px;
+
 			&__carousel {
 				.item {
 					width: 303px;
@@ -487,6 +500,72 @@
 						display: none;
 					}
 				}
+			}
+		}
+	}
+	.banner {
+		background-color: $color-white;
+		overflow: hidden;
+		h2 {
+			margin-bottom: 36px;
+			z-index: 1;
+			position: relative;
+		}
+		.container {
+			padding-top: 207px;
+			padding-bottom: 220px;
+			position: relative;
+		}
+		.downloads {
+			z-index: 1;
+			position: relative;
+			a {
+				&:first-child {
+					margin-right: 18px;
+				}
+				&:focus {
+					outline: none;
+				}
+				&:hover {
+					svg path:first-child {
+						fill: #1d7d1a;
+					}
+				}
+			}
+		}
+		img {
+			position: absolute;
+			right: -180px;
+			bottom: 0;
+		}
+		@include for-size(tablet-landscape-down) {
+			.container {
+				padding-top: 48px;
+				padding-bottom: 383px;
+			}
+			img {
+				width: 650px;
+				right: -200px;
+			}
+		}
+		@include for-size(tablet-portrait-down) {
+			h2 {
+				margin-bottom: 24px;
+			}
+			.container {
+				padding-top: 24px;
+				padding-bottom: 144px;
+			}
+			.downloads {
+				a {
+					display: block;
+					&:first-child {
+						margin-bottom: 18px;
+					}
+				}
+			}
+			img {
+				right: -128px;
 			}
 		}
 	}
