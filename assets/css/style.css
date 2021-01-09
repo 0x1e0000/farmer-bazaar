@@ -3569,11 +3569,17 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .why-farmers .reasons__item h4 { margin-bottom: 18px; }
 
-.home-page .team { margin-bottom: 150px; }
+.home-page .team { margin-bottom: 150px; position: relative; }
+
+.home-page .team .bg-illustrations .bg-illus:nth-child(1) { top: -90px; left: 80px; }
+
+.home-page .team .bg-illustrations .bg-illus:nth-child(2) { left: -320px; bottom: 340px; }
 
 .home-page .team .team__carousel { margin-bottom: 60px; }
 
 .home-page .team .team__carousel header { margin-bottom: 0; }
+
+.home-page .team .team__carousel header h2 { margin-bottom: 24px; }
 
 .home-page .team .team__carousel header p, .home-page .team .team__carousel header .footer a, .footer .home-page .team .team__carousel header a { max-width: 668px; margin: 0 auto; }
 
@@ -3582,4 +3588,14 @@ input::-webkit-input-placeholder { color: #afafaf; }
 .home-page .team .team__carousel .owl-nav button:first-child { -webkit-transform: rotate(90deg); transform: rotate(90deg); margin-bottom: 36px; }
 
 .home-page .team .team__carousel .owl-nav button:last-child { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
+
+.home-page .team .photos__item { margin-bottom: 48px; }
+
+.home-page .team .photos__item__img { margin-bottom: 18px; border-radius: 4px; overflow: hidden; width: 250px; height: 250px; background-color: #a2c83a; }
+
+.home-page .team .photos__item__img img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.home-page .team .photos__item h4 { margin-bottom: 8px; }
+
+.home-page .team .photos__item p, .home-page .team .photos__item .footer a, .footer .home-page .team .photos__item a { margin-bottom: 18px; }
 /*# sourceMappingURL=style.css.map */
