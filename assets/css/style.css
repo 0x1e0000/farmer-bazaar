@@ -3610,4 +3610,20 @@ input::-webkit-input-placeholder { color: #afafaf; }
 .home-page .empowering .posters { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 36px; margin-bottom: 48px; }
 
 .home-page .empowering .posters img { width: 270px; height: 420px; -o-object-fit: contain; object-fit: contain; }
+
+.home-page .testimonials { margin-bottom: 126px; position: relative; }
+
+.home-page .testimonials .bg-illustrations .bg-illus:nth-child(1) { top: -230px; right: 110px; width: 230px; }
+
+.home-page .testimonials__carousel .item p, .home-page .testimonials__carousel .item .footer a, .footer .home-page .testimonials__carousel .item a { margin-bottom: 36px; }
+
+.home-page .testimonials__carousel .item__bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.home-page .testimonials__carousel .item__bottom .avatar { width: 120px; height: 120px; overflow: hidden; border-radius: 50%; margin-right: 24px; }
+
+.home-page .testimonials__carousel .item__bottom .avatar img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
+
+.home-page .testimonials__carousel .owl-nav { position: absolute; right: -16px; top: -120px; }
+
+.home-page .testimonials__carousel .owl-nav button:first-child { margin-right: 24px; }
 /*# sourceMappingURL=style.css.map */
