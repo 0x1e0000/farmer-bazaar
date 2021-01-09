@@ -32,4 +32,13 @@ $(() => {
 			}
 		}
 	});
+	// Team Section Carousel
+	$('.team__carousel').owlCarousel({
+		margin: 24,
+		nav: true,
+		items: 1,
+		dots: false,
+		navText: ['<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7 13L1 7L7 1" stroke="#4AAE34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>', '<svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 13L7 7L1 1" stroke="#4AAE34" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'],
+		animateOut: 'fadeOut'
+	});
 });

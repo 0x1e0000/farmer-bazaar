@@ -826,4 +826,39 @@
 			}
 		}
 	}
+
+	.team {
+		margin-bottom: 150px;
+
+		.team__carousel {
+			margin-bottom: 60px;
+
+			header {
+				margin-bottom: 0;
+
+				p {
+					max-width: 668px;
+					margin: 0 auto
+				}
+			}
+
+			.owl-nav {
+				position: absolute;
+				top: 0;
+				right: 0;
+				flex-direction: column;
+
+				button {
+					&:first-child {
+						transform: rotate(90deg);
+						margin-bottom: 36px;
+					}
+
+					&:last-child {
+						transform: rotate(90deg);
+					}
+				}
+			}
+		}
+	}
 }

@@ -3004,7 +3004,7 @@ input[type="search"] { -webkit-appearance: none; -moz-appearance: none; -webkit-
 textarea { overflow: auto; vertical-align: top; resize: vertical; }
 
 /** 1. Remove border when inside `a` element in IE 6/7/8/9 and Firefox 3. 2. Improve image quality when scaled in IE 7. */
-img { border: 0; /* 1 */ -ms-interpolation-mode: bicubic; /* 2 */ max-width: 100%; }
+img { border: 0; /* 1 */ -ms-interpolation-mode: bicubic; /* 2 */ }
 
 /** 1. Correct font size not being inherited in all browsers. 2. Address margins set differently in IE 6/7, Firefox 3+, Safari 5, and Chrome. 3. Improve appearance and consistency in all browsers. */
 button, input, select, textarea { font-size: 100%; /* 1 */ margin: 0; /* 2 */ vertical-align: baseline; /* 3 */ *vertical-align: middle; /* 3 */ }
@@ -3568,4 +3568,18 @@ input::-webkit-input-placeholder { color: #afafaf; }
 .home-page .why-farmers .reasons__item img { margin-right: 18px; }
 
 .home-page .why-farmers .reasons__item h4 { margin-bottom: 18px; }
+
+.home-page .team { margin-bottom: 150px; }
+
+.home-page .team .team__carousel { margin-bottom: 60px; }
+
+.home-page .team .team__carousel header { margin-bottom: 0; }
+
+.home-page .team .team__carousel header p, .home-page .team .team__carousel header .footer a, .footer .home-page .team .team__carousel header a { max-width: 668px; margin: 0 auto; }
+
+.home-page .team .team__carousel .owl-nav { position: absolute; top: 0; right: 0; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
+.home-page .team .team__carousel .owl-nav button:first-child { -webkit-transform: rotate(90deg); transform: rotate(90deg); margin-bottom: 36px; }
+
+.home-page .team .team__carousel .owl-nav button:last-child { -webkit-transform: rotate(90deg); transform: rotate(90deg); }
 /*# sourceMappingURL=style.css.map */
