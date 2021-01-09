@@ -2972,11 +2972,11 @@ h1, h2, h3, h4, h5, h6 { display: block; font-weight: 700; }
 
 i { vertical-align: middle; }
 
-a, a:visited { cursor: pointer; -webkit-transition: color 300ms ease-in-out; transition: color 300ms ease-in-out; }
+a { cursor: pointer; -webkit-transition: color 300ms ease-in-out; transition: color 300ms ease-in-out; }
 
-a:focus, a:visited:focus { outline: thin dotted; }
+a:focus { outline: thin dotted; }
 
-a:active, a:hover, a:visited:active, a:visited:hover { outline: 0; text-decoration: none; -webkit-transition: color 300ms ease-in-out; transition: color 300ms ease-in-out; }
+a:active, a:hover { outline: 0; text-decoration: none; -webkit-transition: color 300ms ease-in-out; transition: color 300ms ease-in-out; }
 
 svg path { -webkit-transition: stroke 300ms ease-in-out, fill 300ms ease-in-out; transition: stroke 300ms ease-in-out, fill 300ms ease-in-out; }
 
@@ -3142,7 +3142,7 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .benefits__item__img { margin-bottom: 12px; border-radius: 4px; height: 280px; width: 100%; }
 
-.benefits__item__body__title { margin-bottom: 12px; }
+.benefits__item__body .button { margin-bottom: 12px; display: block; color: #49535e; }
 
 .main-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-top: 24px; }
 
@@ -3303,13 +3303,15 @@ input::-webkit-input-placeholder { color: #afafaf; }
 @media (max-width: 992px) { .hero .buttons { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; display: -webkit-box; display: -ms-flexbox; display: flex; }
   .hero .buttons a:first-child { margin-right: 0; margin-bottom: 24px; } }
 
-.footer { padding-top: 72px; padding-bottom: 72px; position: relative; }
+.footer { padding-top: 72px; padding-bottom: 72px; }
+
+.footer .container { position: relative; }
 
 .footer a { margin-bottom: 18px; display: block; }
 
 .footer a:hover { text-decoration: underline; }
 
-.footer .tomato-bg { position: absolute; left: 13%; bottom: 177px; }
+.footer .bg-illustrations .bg-illus:nth-child(1) { position: absolute; left: 70px; bottom: 100px; }
 
 .footer .row > div { margin-bottom: 36px; }
 
@@ -3557,7 +3559,7 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .why-farmers { margin-bottom: 150px; position: relative; }
 
-.home-page .why-farmers .bg-illustrations .bg-illus { right: -214px; top: 130px; }
+.home-page .why-farmers .bg-illustrations .bg-illus { right: -244px; top: 130px; }
 
 .home-page .why-farmers .header { margin-left: 56px; margin-bottom: 0; color: #4aae34; position: relative; top: 27px; }
 
@@ -3601,7 +3603,7 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .empowering { margin-bottom: 150px; }
 
-.home-page .empowering header h2 { text-align: left; max-width: 459px; }
+.home-page .empowering header h2 { text-align: left; max-width: 479px; }
 
 .home-page .empowering .paragraphes { margin-bottom: 60px; }
 
@@ -3654,4 +3656,20 @@ input::-webkit-input-placeholder { color: #afafaf; }
 .home-page .social .banner__body h2 { margin-bottom: 18px; color: #ffffff; }
 
 .home-page .social .banner__body p, .home-page .social .banner__body .footer a, .footer .home-page .social .banner__body a { margin-bottom: 36px; color: #ffffff; }
+
+.home-page .store-locations { margin-bottom: 150px; position: relative; }
+
+.home-page .store-locations .bg-illustrations .bg-illus:nth-child(1) { bottom: -150px; right: -70px; }
+
+.home-page .store-locations .map { margin-bottom: 36px; }
+
+.home-page .store-locations .map img { width: 100%; }
+
+.home-page .store-locations .bottom-info { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.home-page .store-locations .bottom-info > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+
+.home-page .store-locations .bottom-info img { position: relative; top: 5px; margin-right: 8px; }
+
+.home-page .store-locations .bottom-info h4 { margin-bottom: 8px; }
 /*# sourceMappingURL=style.css.map */

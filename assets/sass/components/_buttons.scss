@@ -7,6 +7,7 @@
 		background-color: $color-primary;
 		color: $color-white;
 		border-color: $color-primary;
+
 		&:focus,
 		&:hover,
 		&:active {
@@ -14,8 +15,10 @@
 			border-color: #1d7d1a !important;
 		}
 	}
+
 	&.btn-outline-primary {
 		border: 2px solid $color-primary !important;
+
 		&:focus,
 		&:hover,
 		&:active {
@@ -23,12 +26,14 @@
 			color: $color-white;
 		}
 	}
+
 	&:disabled {
 		background-color: #a5e685 !important;
 		border-color: #a5e685 !important;
 		cursor: not-allowed;
 		color: $color-white !important;
 	}
+
 	&:focus {
 		box-shadow: none !important;
 	}
@@ -41,31 +46,39 @@
 	font-size: 18px;
 	line-height: 28px;
 	color: $color-primary;
+
 	svg {
 		margin-left: 12px;
+
 		path {
 			stroke: $color-primary;
 		}
 	}
+
 	&:hover,
 	&:active,
 	&:focus {
 		color: #1d7d1a;
+
 		svg {
 			path {
 				stroke: #1d7d1a;
 			}
 		}
 	}
+
 	&:visited {
 		color: $color-accent;
+
 		svg {
 			path {
 				stroke: $color-accent;
 			}
 		}
+
 		&:hover {
 			color: #1d7d1a;
+
 			svg {
 				path {
 					stroke: #1d7d1a;
@@ -77,6 +90,7 @@
 
 .nav-link {
 	display: inline-block;
+
 	&:hover,
 	&:active {
 		color: $color-primary;

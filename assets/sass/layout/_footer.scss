@@ -1,38 +1,53 @@
 .footer {
 	padding-top: 72px;
 	padding-bottom: 72px;
-	position: relative;
+
+	.container {
+		position: relative;
+	}
+
 	a {
 		@extend p;
 		margin-bottom: 18px;
 		display: block;
+
 		&:hover {
 			text-decoration: underline;
 		}
 	}
-	.tomato-bg{
-		position: absolute;
-		left: 13%;
-		bottom: 177px;
+
+	.bg-illustrations {
+		.bg-illus {
+			&:nth-child(1) {
+				position: absolute;
+				left: 70px;
+				bottom: 100px;
+			}
+		}
 	}
+
 	.row {
-		& > div{
+		&>div {
 			margin-bottom: 36px;
 		}
-		& > div:nth-child(1) {
+
+		&>div:nth-child(1) {
 			p {
 				margin-top: 24px;
 				margin-bottom: 48px;
 			}
 		}
-		& > div:nth-child(5) {
+
+		&>div:nth-child(5) {
 			h4 {
 				margin-bottom: 24px;
 			}
+
 			a {
 				&:hover {
 					color: #1d7d1a;
 					text-decoration: none;
+
 					svg {
 						path {
 							fill: #1d7d1a;
@@ -40,11 +55,13 @@
 					}
 				}
 			}
+
 			svg {
 				margin-right: 8px;
 				width: 24px;
 			}
 		}
+
 		span.button {
 			color: $color-text;
 			margin-bottom: 12px;
@@ -55,6 +72,7 @@
 	.pre-footer {
 		display: flex;
 		justify-content: center;
+
 		form {
 			margin-top: 18px;
 			background-color: $color-white;
@@ -63,6 +81,7 @@
 			border-radius: 8px;
 			display: flex;
 			justify-content: space-between;
+
 			input[type="email"] {
 				padding: 16px;
 				padding-right: 0;
@@ -71,14 +90,16 @@
 			}
 		}
 	}
-	@include for-size(tablet-landscape-down){
-		.tomato-bg{
+
+	@include for-size(tablet-landscape-down) {
+		.tomato-bg {
 			bottom: auto;
 			top: 180px;
 		}
 	}
-	@include for-size(tablet-portrait-down){
-		.tomato-bg{
+
+	@include for-size(tablet-portrait-down) {
+		.tomato-bg {
 			top: auto;
 			bottom: 250px;
 			right: 111px;
