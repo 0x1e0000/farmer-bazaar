@@ -1,0 +1,21 @@
+.benefits {
+	&__item {
+		width: 259px;
+		padding: 18px;
+		margin: 24px;
+		background: $color-white;
+		border: 1px solid $color-gray;
+		border-radius: 4px;
+		&__img {
+			margin-bottom: 12px;
+			border-radius: 4px;
+			height: 280px;
+			width: 100%;
+		}
+		&__body {
+			&__title {
+				margin-bottom: 12px;
+			}
+		}
+	}
+}

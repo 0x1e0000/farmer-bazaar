@@ -3138,6 +3138,12 @@ input:-ms-input-placeholder { color: #afafaf; }
 
 input::-webkit-input-placeholder { color: #afafaf; }
 
+.benefits__item { width: 259px; padding: 18px; margin: 24px; background: #ffffff; border: 1px solid #d7d7d7; border-radius: 4px; }
+
+.benefits__item__img { margin-bottom: 12px; border-radius: 4px; height: 280px; width: 100%; }
+
+.benefits__item__body__title { margin-bottom: 12px; }
+
 .main-header { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; padding-top: 24px; }
 
 .main-header .info-panel { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
@@ -3407,7 +3413,9 @@ input::-webkit-input-placeholder { color: #afafaf; }
   .home-page .special-product .owl-stage { -webkit-transform: none !important; transform: none !important; width: 100% !important; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
   .home-page .special-product .owl-item { margin-right: 0 !important; } }
 
-.home-page .deals { margin-bottom: 123px; position: relative; }
+.home-page .deals { margin-bottom: 123px; }
+
+.home-page .deals .container { position: relative; }
 
 .home-page .deals .bg-illustrations .bg-illus:nth-child(1) { top: -100px; left: -230px; }
 
@@ -3476,6 +3484,8 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .deals__carousel .owl-nav button:first-child { margin-right: 24px; }
 
+.home-page .deals__carousel .owl-dots { display: none; }
+
 @media (max-width: 992px) { .home-page .deals { margin-bottom: 120px; }
   .home-page .deals__carousel { position: absolute; width: 96vw; }
   .home-page .deals__carousel .item { width: 627px; }
@@ -3486,7 +3496,9 @@ input::-webkit-input-placeholder { color: #afafaf; }
   .home-page .deals__carousel .item { width: 303px; }
   .home-page .deals .bg-illustrations .bg-illus:nth-child(2) { display: none; } }
 
-.home-page .banner { background-color: #ffffff; overflow: hidden; }
+.home-page .banner { background-color: #ffffff; }
+
+.home-page .banner .bg-illustrations .bg-illus:nth-child(1) { bottom: -55px; left: 36%; z-index: 1; }
 
 .home-page .banner h2 { margin-bottom: 36px; z-index: 1; position: relative; }
 
@@ -3500,7 +3512,7 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .banner .downloads a:hover svg path:first-child { fill: #1d7d1a; }
 
-.home-page .banner img { position: absolute; right: -180px; bottom: 0; }
+.home-page .banner .img { position: absolute; right: -180px; bottom: 0; }
 
 @media (max-width: 992px) { .home-page .banner .container { padding-top: 48px; padding-bottom: 383px; }
   .home-page .banner img { width: 650px; right: -200px; } }
@@ -3510,4 +3522,36 @@ input::-webkit-input-placeholder { color: #afafaf; }
   .home-page .banner .downloads a { display: block; }
   .home-page .banner .downloads a:first-child { margin-bottom: 18px; }
   .home-page .banner img { right: -128px; } }
+
+.home-page .membership { padding-top: 195px; padding-bottom: 292px; margin-bottom: 141px; }
+
+.home-page .membership .container { position: relative; }
+
+.home-page .membership .bg-illustrations .bg-illus:nth-child(1) { right: -320px; top: 60px; }
+
+.home-page .membership .bg-illustrations .bg-illus:nth-child(2) { bottom: -480px; left: 0; z-index: 1; }
+
+.home-page .membership__content h2 { margin-bottom: 24px; }
+
+.home-page .membership__content h2 span { color: #4aae34; }
+
+.home-page .membership__content p, .home-page .membership__content .footer a, .footer .home-page .membership__content a { margin-bottom: 36px; font-family: "OpenSans SemiBold"; }
+
+.home-page .membership__content .buttons a:first-child { margin-right: 36px; }
+
+.home-page .membership__cards { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: horizontal; -webkit-box-direction: reverse; -ms-flex-direction: row-reverse; flex-direction: row-reverse; position: relative; z-index: 1; }
+
+.home-page .membership__cards .benefits { position: absolute; }
+
+.home-page .membership__cards .benefits:nth-child(1) { right: -104px; top: -160px; }
+
+.home-page .membership__cards .benefits:nth-child(2) { left: -40px; top: -84px; }
+
+.home-page .health { padding-top: 150px; margin-bottom: 150px; position: relative; }
+
+.home-page .health .bg-illustrations .bg-illus:nth-child(1) { bottom: -60px; left: -270px; }
+
+.home-page .health .features__item { margin-bottom: 60px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.home-page .health .features__item h4 { margin-left: 36px; }
 /*# sourceMappingURL=style.css.map */
