@@ -3615,15 +3615,43 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .testimonials .bg-illustrations .bg-illus:nth-child(1) { top: -230px; right: 110px; width: 230px; }
 
+.home-page .testimonials__carousel .item__holder { height: 326px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+
 .home-page .testimonials__carousel .item p, .home-page .testimonials__carousel .item .footer a, .footer .home-page .testimonials__carousel .item a { margin-bottom: 36px; }
 
 .home-page .testimonials__carousel .item__bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: start; -ms-flex-pack: start; justify-content: flex-start; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
-.home-page .testimonials__carousel .item__bottom .avatar { width: 120px; height: 120px; overflow: hidden; border-radius: 50%; margin-right: 24px; }
+.home-page .testimonials__carousel .item__bottom .avatar { width: 120px; height: 120px; min-width: 120px; overflow: hidden; border-radius: 50%; margin-right: 24px; }
 
 .home-page .testimonials__carousel .item__bottom .avatar img { width: 100%; height: 100%; -o-object-fit: cover; object-fit: cover; }
 
 .home-page .testimonials__carousel .owl-nav { position: absolute; right: -16px; top: -120px; }
 
 .home-page .testimonials__carousel .owl-nav button:first-child { margin-right: 24px; }
+
+.home-page .social { margin-bottom: 150px; padding-top: 60px; padding-bottom: 60px; }
+
+.home-page .social .container { position: relative; }
+
+.home-page .social .bg-illustrations .bg-illus:nth-child(1) { top: 30px; left: 40px; }
+
+.home-page .social .bg-illustrations .bg-illus:nth-child(2) { bottom: 240px; right: -110px; }
+
+.home-page .social .bg-illustrations .bg-illus:nth-child(3) { bottom: -180px; left: -140px; width: 340px; }
+
+.home-page .social a { margin-top: 18px; }
+
+.home-page .social .title { margin-bottom: 60px; }
+
+.home-page .social .banner { margin: 48px 0; background-image: url(../img/backgrounds/banner.jpg); background-size: cover; background-repeat: no-repeat; border-radius: 8px; overflow: hidden; position: relative; }
+
+.home-page .social .banner .bg { position: absolute; top: 0; bottom: 0; border-radius: 8px; left: 0; right: 21.5rem; -webkit-clip-path: polygon(0 0, 66% 0, 100% 100%, 0% 100%); clip-path: polygon(0 0, 66% 0, 100% 100%, 0% 100%); background: -webkit-gradient(linear, left bottom, left top, from(rgba(39, 43, 48, 0.4)), to(rgba(39, 43, 48, 0.4))), rgba(74, 174, 52, 0.8); background: linear-gradient(0deg, rgba(39, 43, 48, 0.4), rgba(39, 43, 48, 0.4)), rgba(74, 174, 52, 0.8); background-blend-mode: normal, multiply; }
+
+.home-page .social .banner a { margin-top: 0; }
+
+.home-page .social .banner__body { max-width: 458px; padding-top: 81px; padding-bottom: 81px; padding-left: 62px; z-index: 1; position: relative; }
+
+.home-page .social .banner__body h2 { margin-bottom: 18px; color: #ffffff; }
+
+.home-page .social .banner__body p, .home-page .social .banner__body .footer a, .footer .home-page .social .banner__body a { margin-bottom: 36px; color: #ffffff; }
 /*# sourceMappingURL=style.css.map */
