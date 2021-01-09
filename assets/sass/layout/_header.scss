@@ -2,25 +2,37 @@
 	display: flex;
 	justify-content: center;
 	padding-top: 24px;
+
+	.logo {
+		img {
+			max-width: 100%;
+		}
+	}
+
 	.info-panel {
 		@include flex(center, flex-start);
-		& > div {
+
+		&>div {
 			display: flex;
+
 			&:not(:last-child) {
 				border-right: 1px solid $color-gray2;
 				padding-right: 24px;
 				margin-right: 24px;
 			}
 		}
+
 		.button {
 			color: $color-text;
 			margin-left: 8px;
 			margin-right: 12px;
 		}
 	}
+
 	@include for-size(tablet-landscape-down) {
 		flex-direction: column;
 		align-items: center;
+
 		.logo {
 			margin-bottom: 18px;
 			width: 100px;

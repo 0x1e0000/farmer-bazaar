@@ -92,18 +92,41 @@
 	}
 
 	@include for-size(tablet-landscape-down) {
-		.tomato-bg {
-			bottom: auto;
-			top: 180px;
+		.bg-illustrations {
+			.bg-illus {
+				&:nth-child(1) {
+					left: 0;
+					bottom: unset;
+					top: 90px;
+				}
+			}
 		}
+
+		.row {
+			&>div {
+				margin-bottom: 0;
+				@include flex(center, center);
+
+				&:nth-child(1) {
+					p {
+						max-width: 190px;
+					}
+				}
+			}
+		}
+
 	}
 
 	@include for-size(tablet-portrait-down) {
-		.tomato-bg {
-			top: auto;
-			bottom: 250px;
-			right: 111px;
-			left: auto;
+		.bg-illustrations {
+			.bg-illus {
+				&:nth-child(1) {
+					top: auto;
+					bottom: 250px;
+					right: 111px;
+					left: auto;
+				}
+			}
 		}
 	}
 }

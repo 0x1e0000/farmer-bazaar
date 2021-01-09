@@ -1,43 +1,53 @@
 .hero {
 	position: relative;
 	margin-bottom: 150px;
+
 	h1 {
 		max-width: 734px;
 	}
+
 	p {
 		margin-top: 36px;
 		margin-bottom: 60px;
 	}
+
 	.buttons {
 		a:first-child {
 			margin-right: 24px;
 		}
 	}
+
 	img {
 		position: absolute;
 		right: -130px;
 		top: 0;
 		z-index: -1;
+		max-width: 100%;
 	}
+
 	@include for-size(desktop-down) {
 		margin-bottom: 72px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+
 		p {
 			margin-top: 24px;
 			margin-bottom: 36px;
 		}
+
 		img {
 			margin-top: 24px;
 			position: static;
 		}
 	}
+
 	@include for-size(tablet-landscape-down) {
 		.buttons {
 			flex-direction: column;
 			display: flex;
+
 			a:first-child {
 				margin-right: 0;
 				margin-bottom: 24px;
