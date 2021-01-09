@@ -1,4 +1,5 @@
 .home-page {
+
 	.product-cat {
 		margin-bottom: 150px;
 		position: relative;
@@ -906,6 +907,41 @@
 				p {
 					margin-bottom: 18px;
 				}
+			}
+		}
+	}
+
+	.empowering {
+		margin-bottom: 150px;
+
+		header {
+			h2 {
+				text-align: left;
+				max-width: 459px;
+			}
+		}
+
+		.paragraphes {
+			margin-bottom: 60px;
+
+			&>div {
+				&:first-child {
+					p {
+						margin-right: 57px;
+					}
+				}
+			}
+		}
+
+		.posters {
+			display: flex;
+			gap: 36px;
+			margin-bottom: 48px;
+
+			img {
+				width: 270px;
+				height: 420px;
+				object-fit: contain;
 			}
 		}
 	}
