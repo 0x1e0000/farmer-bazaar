@@ -203,6 +203,8 @@
 					&__title {
 						margin-bottom: 8px;
 						font-size: 20px;
+						line-height: 28px;
+						font-weight: normal;
 					}
 
 					&__details {
@@ -963,6 +965,7 @@
 
 				img {
 					margin-right: 18px;
+					width: 30px;
 				}
 
 				h4 {
@@ -991,7 +994,7 @@
 				border-width: 12px;
 				padding: 24px;
 				img {
-					width: 61px;
+					width: 21px;
 				}
 			}
 		}
@@ -1010,7 +1013,7 @@
 			}
 			.reasons {
 				border-width: 8px;
-				padding: 17px 2px;
+				padding: 17px 24px;
 				&__item {
 					margin-bottom: 18px;
 				}
@@ -1118,7 +1121,7 @@
 			.photos {
 				&__item {
 					margin-bottom: 36px;
-					&__img{
+					&__img {
 						height: 136px;
 					}
 				}
@@ -1144,15 +1147,15 @@
 			.photos {
 				position: absolute;
 				width: 480px;
-				&>div{
+				& > div {
 					padding-left: 9px;
 					padding-right: 9px;
 				}
 				&__item {
-					p{
+					p {
 						margin-bottom: 6px;
 					}
-					&__img{
+					&__img {
 						margin-bottom: 12px;
 					}
 				}
@@ -1571,12 +1574,12 @@
 				&__body {
 					padding: 24px 16px 64px;
 					max-width: 260px;
-					p{
+					p {
 						margin-bottom: 24px;
 					}
 				}
 				.bg {
-					right: 0
+					right: 0;
 				}
 			}
 		}
@@ -1668,6 +1671,3 @@
 		}
 	}
 }
-// .bg-illustrations, .owl-stage-outer, .membership__cards{
-// 	display: none !important;
-// }

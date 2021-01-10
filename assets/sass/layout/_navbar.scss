@@ -8,10 +8,10 @@
 		&__top {
 			display: flex;
 			justify-content: space-between;
-			flex-wrap: wrap;
 			&__links {
 				margin-bottom: 32px;
 				display: flex;
+				flex: 1;
 				& > div {
 					display: flex;
 					align-items: flex-start;
@@ -31,8 +31,12 @@
 					}
 				}
 				@include for-size(desktop-down) {
-					flex: 1;
 					justify-content: space-between;
+					& > div {
+						margin-right: 0;
+						flex: 1;
+						justify-content: center;
+					}
 				}
 			}
 			&__buttons {
@@ -46,10 +50,11 @@
 		}
 		&__bottom {
 			@include flex(flex-start, center);
-			flex-wrap: wrap;
+			// flex-wrap: wrap;
 
 			&__search {
 				margin-bottom: 36px;
+				flex: 1;
 				margin-right: 28px;
 				.input-group {
 					border: 1px solid $color-gray;
@@ -146,6 +151,7 @@
 				margin-right: 40px;
 				.nav-link {
 					font-family: $font-primary-regular;
+					font-weight: normal;
 				}
 			}
 			&__icons {

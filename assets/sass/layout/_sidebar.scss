@@ -76,7 +76,7 @@
 			transition: top 400ms ease;
 		}
 	}
-	@include for-size(tablet-landscape-down) {
+	@include for-size(desktop-down) {
 		.sidebar {
 			padding: 10px 30px 30px;
 			&__links {

@@ -12,7 +12,7 @@
 	.info-panel {
 		@include flex(center, flex-start);
 
-		&>div {
+		& > div {
 			display: flex;
 
 			&:not(:last-child) {
