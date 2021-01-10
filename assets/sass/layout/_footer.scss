@@ -119,14 +119,16 @@
 
 	@include for-size(tablet-portrait-down) {
 		padding-top: 36px;
+		overflow: hidden;
 		padding-bottom: 36px;
 		.bg-illustrations {
 			.bg-illus {
 				&:nth-child(1) {
 					top: auto;
 					bottom: 250px;
-					right: 111px;
+					right: 70px;
 					left: auto;
+					width: 85px;
 				}
 			}
 		}

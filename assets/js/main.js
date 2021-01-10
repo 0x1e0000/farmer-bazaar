@@ -29,7 +29,8 @@ $(() => {
 			0: {
 				nav: false,
 				autoWidth: true,
-				items: 2
+				items: 2,
+				margin: 12
 			},
 			992: {
 				nav: true

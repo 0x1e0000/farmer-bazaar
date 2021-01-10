@@ -86,6 +86,14 @@
 			}
 		}
 	}
+	@include for-size(tablet-portrait-down) {
+		font-size: 12px;
+		line-height: 18px;
+		svg {
+			width: 16px;
+			margin-left: 3px;
+		}
+	}
 }
 
 .nav-link {
