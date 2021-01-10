@@ -103,10 +103,10 @@
 		}
 
 		.row {
-			&>div {
+			&>div:first-child {
 				margin-bottom: 0;
-				@include flex(center, center);
-
+				display: flex;
+				justify-content: center;
 				&:nth-child(1) {
 					p {
 						max-width: 190px;
@@ -118,6 +118,8 @@
 	}
 
 	@include for-size(tablet-portrait-down) {
+		padding-top: 36px;
+		padding-bottom: 36px;
 		.bg-illustrations {
 			.bg-illus {
 				&:nth-child(1) {
@@ -125,6 +127,19 @@
 					bottom: 250px;
 					right: 111px;
 					left: auto;
+				}
+			}
+		}
+		.row {
+			&>div {
+				margin-bottom: 36px;
+			}
+		}
+		.pre-footer{
+			form{
+				width: 100%;
+				.btn{
+					min-width: auto;
 				}
 			}
 		}

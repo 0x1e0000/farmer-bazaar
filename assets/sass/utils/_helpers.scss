@@ -43,5 +43,10 @@ section {
 				}
 			}
 		}
+		@include for-size(tablet-portrait-down) {
+			width: 48px;
+			height: 48px;
+		}
 	}
 }
+
