@@ -42,10 +42,11 @@
 					background-repeat: no-repeat;
 					background-position: bottom right;
 					border-radius: 4px;
+					background-size: contain;
 					background-color: $color-white;
 				}
 
-				@include for-size(tablet-landscape-down) {
+				@include for-size(desktop-down) {
 					padding-right: 6px;
 					padding-left: 6px;
 
@@ -69,6 +70,7 @@
 				@include for-size(tablet-portrait-down) {
 					.cetegory {
 						margin-bottom: 12px;
+						height: 160px;
 					}
 
 					.cta {
@@ -235,7 +237,10 @@
 			}
 			&__carousel {
 				position: absolute;
-
+				.item {
+					height: 434px;
+					width: 220px;
+				}
 				.owl-nav {
 					display: none;
 				}

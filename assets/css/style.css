@@ -3370,14 +3370,14 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .product-cat .cetegories > div .cta h4 { margin-bottom: 36px; }
 
-.home-page .product-cat .cetegories > div .cetegory { border: 1px solid #d7d7d7; margin-bottom: 18px; padding: 24px; height: 250px; background-repeat: no-repeat; background-position: bottom right; border-radius: 4px; background-color: #ffffff; }
+.home-page .product-cat .cetegories > div .cetegory { border: 1px solid #d7d7d7; margin-bottom: 18px; padding: 24px; height: 250px; background-repeat: no-repeat; background-position: bottom right; border-radius: 4px; background-size: contain; background-color: #ffffff; }
 
-@media (max-width: 992px) { .home-page .product-cat .cetegories > div { padding-right: 6px; padding-left: 6px; }
+@media (max-width: 1200px) { .home-page .product-cat .cetegories > div { padding-right: 6px; padding-left: 6px; }
   .home-page .product-cat .cetegories > div .cetegory { height: 220px; padding: 21px; margin-bottom: 24px; }
   .home-page .product-cat .cetegories > div .cta { margin-bottom: 24px; height: 220px; padding: 17px 24px; }
   .home-page .product-cat .cetegories > div .cta h4 { margin-bottom: 18px; } }
 
-@media (max-width: 768px) { .home-page .product-cat .cetegories > div .cetegory { margin-bottom: 12px; }
+@media (max-width: 768px) { .home-page .product-cat .cetegories > div .cetegory { margin-bottom: 12px; height: 160px; }
   .home-page .product-cat .cetegories > div .cta { padding: 17px 24px; height: 172px; padding: 19px 24px; } }
 
 @media (max-width: 992px) { .home-page .product-cat { margin-bottom: 32px; }
@@ -3422,6 +3422,7 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 @media (max-width: 992px) { .home-page .special-product .background { padding: 24px; }
   .home-page .special-product__carousel { position: absolute; }
+  .home-page .special-product__carousel .item { height: 434px; width: 220px; }
   .home-page .special-product__carousel .owl-nav { display: none; } }
 
 @media (max-width: 768px) { .home-page .special-product { margin-bottom: 52px; }
