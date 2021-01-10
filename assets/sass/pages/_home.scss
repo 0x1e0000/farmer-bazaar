@@ -155,13 +155,15 @@
 				flex-direction: column;
 
 				&__status {
+					line-height: 1;
 					position: absolute;
 					padding: 10px;
 					text-align: center;
-					top: 27px;
-					left: -81px;
+					top: 16px;
+					left: -60px;
+					width: 250px;
+					font-size: 14px;
 					color: $color-white;
-					width: 130%;
 					border-radius: 4px;
 					transform: rotate(-28deg);
 
@@ -182,7 +184,10 @@
 						color: $color-text;
 					}
 				}
-
+				&__img {
+					flex: 1;
+					object-fit: contain;
+				}
 				&__body {
 					padding: 16px 24px;
 					position: relative;
@@ -239,7 +244,21 @@
 				position: absolute;
 				.item {
 					height: 434px;
-					width: 220px;
+					width: 214px;
+
+					&__status {
+						top: 16px;
+						left: -50px;
+						width: 250px;
+					}
+					&__body {
+						height: 160px;
+						flex: 0;
+						&__title {
+							font-size: 18px;
+							line-height: 28px;
+						}
+					}
 				}
 				.owl-nav {
 					display: none;
@@ -255,6 +274,8 @@
 				background-position: 40% 25%;
 				margin-bottom: 30px;
 				padding: 32px 15px;
+				background-size: cover;
+				background-repeat: no-repeat;
 			}
 
 			.carousel-holder {
@@ -273,9 +294,9 @@
 					margin-bottom: 18px;
 
 					&__status {
-						top: 18px;
-						left: -73px;
-						width: 80%;
+						font-size: 12px;
+						top: 17px;
+						left: -70px;
 					}
 
 					&__img {
@@ -285,6 +306,7 @@
 					&__body {
 						height: 100%;
 						padding: 24px;
+						flex: 1;
 
 						&__btn {
 							display: none;
@@ -337,9 +359,6 @@
 		}
 
 		&__carousel {
-			.owl-stage-outer {
-				position: absolute;
-			}
 			.carousel-container {
 				background-repeat: no-repeat;
 				background-position: center;
@@ -574,6 +593,9 @@
 			margin-bottom: 120px;
 
 			&__carousel {
+				.owl-stage-outer {
+					position: absolute;
+				}
 				position: absolute;
 				width: 96vw;
 				overflow: hidden;
@@ -794,7 +816,7 @@
 				}
 
 				&:nth-child(2) {
-					left: -40px;
+					left: 9px;
 					top: -84px;
 				}
 			}
@@ -812,7 +834,7 @@
 				&:nth-child(2) {
 					left: unset;
 					top: 20px;
-					right: 124px;
+					right: 212px;
 				}
 			}
 			.bg-illustrations {
@@ -947,7 +969,7 @@
 
 		.bg-illustrations {
 			.bg-illus {
-				right: -244px;
+				right: -300px;
 				top: 130px;
 			}
 		}
@@ -979,9 +1001,17 @@
 			}
 		}
 
+		@include for-size(desktop-down) {
+			.bg-illustrations {
+				.bg-illus {
+					top: unset;
+					right: 0;
+					bottom: -280px;
+				}
+			}
+		}
 		@include for-size(tablet-landscape-down) {
 			margin-bottom: 200px;
-
 			.bg-illustrations {
 				.bg-illus {
 					top: unset;
@@ -990,7 +1020,6 @@
 					width: 347px;
 				}
 			}
-
 			.header {
 				top: 20px;
 				margin-left: 0;
