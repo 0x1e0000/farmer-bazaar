@@ -3806,9 +3806,7 @@ input::-webkit-input-placeholder { color: #afafaf; }
 
 .home-page .store-locations .bg-illustrations .bg-illus:nth-child(1) { bottom: -150px; right: -70px; }
 
-.home-page .store-locations .map { margin-bottom: 36px; }
-
-.home-page .store-locations .map img { width: 100%; }
+.home-page .store-locations #map { height: 400px; width: 100%; margin-bottom: 36px; }
 
 .home-page .store-locations .bottom-info { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: space-evenly; -ms-flex-pack: space-evenly; justify-content: space-evenly; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 

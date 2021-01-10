@@ -1631,13 +1631,10 @@
 				}
 			}
 		}
-
-		.map {
+		#map {
+			height: 400px;
+			width: 100%;
 			margin-bottom: 36px;
-
-			img {
-				width: 100%;
-			}
 		}
 
 		.bottom-info {

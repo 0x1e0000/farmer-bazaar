@@ -13,7 +13,28 @@
 	<meta name="Keywords" content="">
 	<meta name="author" content="">
 	<meta name="Description" content="">
-
+	<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly" defer>
+	</script>
+	<script>
+		// Initialize and add the map
+		function initMap() {
+			// The location of Uluru
+			const uluru = {
+				lat: -25.344,
+				lng: 131.036
+			};
+			// The map, centered at Uluru
+			const map = new google.maps.Map(document.getElementById("map"), {
+				zoom: 4,
+				center: uluru,
+			});
+			// The marker, positioned at Uluru
+			const marker = new google.maps.Marker({
+				position: uluru,
+				map: map,
+			});
+		}
+	</script>
 	<!-- Stylesheet
 	================================================== -->
 	<link rel="stylesheet" href="./assets/css/style.css">
@@ -1193,9 +1214,9 @@
 		<header>
 			<h2>Pick the Store Closest to you</h2>
 		</header>
-		<!-- the map needs back-end API to track the locations -->
 		<div class="map">
-			<img src="./assets/img/map/map.jpg" alt="map">
+			<!-- <img src="./assets/img/map/map.jpg" alt="map"> -->
+			<div id="map"></div>
 		</div>
 		<div class="bottom-info">
 			<div>
